@@ -25,12 +25,12 @@ Jogo.prototype.carregar = function (url, callback) {
             var pares = self.baralho.getPares();
             pares.forEach(function(par){
                 if(count < max-1){
-                    self.matrizCartao.addSuffle(par.cartaoA);
-                    self.matrizCartao.addSuffle(par.cartaoB);
+                    self.matrizCartao.add(par.cartaoA);
+                    self.matrizCartao.add(par.cartaoB);
                     count+=2;
                 }
             });
-            self.matrizCartao.suffle();
+            //self.matrizCartao.suffle();
             callback.apply(self);
         },
         error: function () {
