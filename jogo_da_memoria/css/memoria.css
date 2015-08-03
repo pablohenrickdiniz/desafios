@@ -1,0 +1,57 @@
+.cartao{
+    border:1px solid #BBB;
+    float:left;
+    border-radius:3px;
+    position:relative;
+    transition-property: transform,background;
+    transition-duration: 1s,0s;
+    transition-delay: 0s, 300ms, 300ms;
+    transform:rotateY(0deg);
+    background-size: 100% 100%;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.cartao.back{
+    transition-property: transform,background;
+    transition-duration: 1s,0s;
+    transition-delay: 0s, 300ms, 300ms;
+    transform:rotateY(180deg);
+    background-repeat:repeat;
+}
+
+.slot{
+    float:left;
+    background-color: white;
+    margin:5px 5px 5px 5px;
+    border: 1px solid #EEE;
+}
+
+.memoria-container {
+    border:1px solid #DDD;
+    display: inline-block;
+}
+
+.cartao:hover{
+    cursor:pointer;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.jogo-info{
+    font-weight: bolder;
+    font-size:20px;
+    padding:5px 10px 5px 10px;
+    margin:0;
+}
+
+.jogo-opcoes button{
+    border-radius:0 !important;
+}
+
+.jogo-opcoes{
+    padding-top:10px;
+}

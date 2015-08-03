@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/memoria.css"/>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="js/Object.js"></script>
+    <script type="text/javascript" src="js/Baralho.js"></script>
+    <script type="text/javascript" src="js/Cartao.js"></script>
+    <script type="text/javascript" src="js/matriz_cartao.js"></script>
+    <script type="text/javascript" src="js/Jogo.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="btn-group jogo-opcoes" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                Jogo
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Novo Jogo</a></li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#">Aparência</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="jogo" class="row memoria-container">
+
+    </div>
+    <div class="row">
+        <span class="jogo-info">Tempo: <i>00:00</i></span>
+        <span class="jogo-info">Pontuação: <i>0</i></span>
+    </div>
+</div>
+</body>
+</html>

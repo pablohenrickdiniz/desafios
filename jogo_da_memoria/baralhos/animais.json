@@ -1,0 +1,200 @@
+{
+    "titulo": "Animais e seus gêneros",
+    "imagem-fundo": "",
+    "altura":"100",
+    "largura":"100",
+    "cartoes": [
+        {
+            "id":"001",
+            "titulo": "Bode",
+            "imagem": "img/animais/bode-min.png",
+            "par":"002"
+        },
+        {
+            "id":"002",
+            "titulo": "Cabra",
+            "imagem": "img/animais/cabra-min.png",
+            "par":"001"
+        },
+        {
+            "id":"003",
+            "titulo": "Cachorro",
+            "imagem": "img/animais/cachorro-min.png",
+            "par":"004"
+        },
+        {
+            "id":"004",
+            "titulo": "Cadela",
+            "imagem": "img/animais/cadela-min.png",
+            "par":"003"
+        },
+        {
+            "id":"005",
+            "titulo": "Carneiro",
+            "imagem": "img/animais/carneiro-min.png",
+            "par":"006"
+        },
+        {
+            "id":"006",
+            "titulo":"Ovelha",
+            "imagem": "img/animais/ovelha-min.png",
+            "par":"005"
+        },
+        {
+            "id":"007",
+            "titulo": "Vaca",
+            "imagem": "img/animais/vaca-min.png",
+            "par":"008"
+        },
+        {
+            "id":"008",
+            "titulo": "Touro",
+            "imagem": "img/animais/touro-min.png",
+            "par":"007"
+        },
+        {
+            "id":"009",
+            "titulo": "Cavalo",
+            "imagem": "img/animais/cavalo-min.png",
+            "par":"010"
+        },
+        {
+            "id":"010",
+            "titulo": "Égua",
+            "imagem": "img/animais/egua-min.png",
+            "par":"009"
+        },
+        {
+            "id":"011",
+            "titulo": "Coelha",
+            "imagem": "img/animais/coelha-min.png",
+            "par":"012"
+        },
+        {
+            "id":"012",
+            "titulo": "Coelho",
+            "imagem": "img/animais/coelho-min.png",
+            "par":"011"
+        },
+        {
+            "id":"013",
+            "titulo": "Elefante",
+            "imagem": "img/animais/elefante-min.png",
+            "par":"014"
+        },
+        {
+            "id":"014",
+            "titulo": "Elefanta",
+            "imagem": "img/animais/elefanta-min.png",
+            "par":"013"
+        },
+        {
+            "id":"015",
+            "titulo": "Galo",
+            "imagem": "img/animais/galo-min.png",
+            "par":"016"
+        },
+        {
+            "id":"016",
+            "titulo": "Galinha",
+            "imagem": "img/animais/galinha-min.png",
+            "par":"015"
+        },
+        {
+            "id":"017",
+            "titulo": "Gata",
+            "imagem": "img/animais/gata-min.png",
+            "par":"018"
+        },
+        {
+            "id":"018",
+            "titulo": "Gato",
+            "imagem": "img/animais/gato-min.png",
+            "par":"017"
+        },
+        {
+            "id":"019",
+            "titulo": "Leão",
+            "imagem": "img/animais/leao-min.png",
+            "par":"020"
+        },
+        {
+            "id":"020",
+            "titulo": "Leoa",
+            "imagem": "img/animais/leoa-min.png",
+            "par":"019"
+        },
+        {
+            "id":"021",
+            "titulo": "Macaca",
+            "imagem": "img/animais/macaca-min.png",
+            "par":"022"
+        },
+        {
+            "id":"022",
+            "titulo": "Macaco",
+            "imagem": "img/animais/macaco-min.png",
+            "par":"021"
+        },
+        {
+            "id":"023",
+            "titulo": "Pata",
+            "imagem": "img/animais/pata-min.png",
+            "par":"024"
+        },
+        {
+            "id":"024",
+            "titulo": "Pato",
+            "imagem": "img/animais/pato-min.png",
+            "par":"023"
+        },
+        {
+            "id":"025",
+            "titulo": "Pavão",
+            "imagem": "img/animais/pavao-min.png",
+            "par":"026"
+        },
+        {
+            "id":"026",
+            "titulo": "Pavoa",
+            "imagem": "img/animais/pavoa-min.png",
+            "par":"025"
+        },
+        {
+            "id":"027",
+            "titulo": "Peru",
+            "imagem": "img/animais/peru-min.png",
+            "par":"028"
+        },
+        {
+            "id":"028",
+            "titulo": "Perua",
+            "imagem": "img/animais/perua-min.png",
+            "par":"027"
+        },
+        {
+            "id":"029",
+            "titulo": "Porca",
+            "imagem": "img/animais/porca-min.png",
+            "par":"030"
+        },
+        {
+            "id":"030",
+            "titulo": "Porco",
+            "imagem": "img/animais/porco-min.png",
+            "par":"029"
+        },
+        {
+            "id":"031",
+            "titulo": "Sapa",
+            "imagem": "img/animais/sapa-min.png",
+            "par":"032"
+        },
+        {
+            "id":"032",
+            "titulo": "Sapo",
+            "imagem": "img/animais/sapo-min.png",
+            "par":"031"
+        }
+    ]
+}
