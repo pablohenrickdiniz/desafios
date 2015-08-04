@@ -8,7 +8,7 @@ function Jogo() {
 Jogo.prototype.iniciar = function (element) {
     var self = this;
     var baralho = self.baralho;
-    self.matrizCartao.render(element,{altura:baralho.altura,largura:baralho.largura});
+    self.render(element,baralho);
 };
 
 Jogo.prototype.carregar = function (url, callback) {
@@ -18,19 +18,18 @@ Jogo.prototype.carregar = function (url, callback) {
         type: 'post',
         dataType: 'json',
         success: function (baralho) {
-            self.matrizCartao = new MatrizCartao(self.dificuldade + 1, self.dificuldade +1 );
+            self.matrizCartao = math.zeros(self.dificuldade + 1,self.dificuldade +1 );
             self.baralho = new Baralho(baralho);
             var max = (self.dificuldade+1) * (self.dificuldade + 1);
             var count = 0;
             var pares = self.baralho.getPares();
             pares.forEach(function(par){
                 if(count < max-1){
-                    self.matrizCartao.add(par.cartaoA);
-                    self.matrizCartao.add(par.cartaoB);
+                    self.insert(par.cartaoA);
+                    self.insert(par.cartaoB);
                     count+=2;
                 }
             });
-            //self.matrizCartao.suffle();
             callback.apply(self);
         },
         error: function () {
@@ -41,4 +40,69 @@ Jogo.prototype.carregar = function (url, callback) {
 
 Jogo.prototype.loadCartoes = function (baralho, jogo) {
     var pares = jogo.pares == undefined ? [] : jogo.pares;
+};
+
+
+Jogo.prototype.insert = function(cartao){
+    var position = this.getMatrixFreePosition();
+    var self = this;
+    if(position != null){
+        self.matrizCartao = math.subset(self.matrizCartao, math.index(position[0], position[1]), cartao);
+    }
+};
+
+Jogo.prototype.getMatrixFreePosition = function(){
+    var index = null;
+    var self = this;
+
+    var rows = self.matrizCartao['_size'][0];
+    var cols = self.matrizCartao['_size'][1];
+
+    for (var x = 0; x < rows; x++) {
+        for (var y = 0; y < cols; y++){
+            var cartao = math.subset(self.matrizCartao,math.index(x,y));
+            if(cartao == 0){
+                index = [x,y];
+                break;
+            }
+        }
+    }
+
+    return index;
+};
+
+Jogo.prototype.countCartoes = function(){
+    var count = 0;
+    var self = this;
+    self.matrizCartao.forEach(function(value){
+        if(value != 0){
+            count++;
+        }
+    });
+    return count;
+};
+
+Jogo.prototype.render = function (element,opcoes) {
+    $(element).empty();
+    var self = this;
+
+    var rows = self.matrizCartao['_size'][0];
+    var cols = self.matrizCartao['_size'][1];
+
+    for (var x = 0; x < rows; x++) {
+        for (var y = 0; y < cols; y++){
+            var slot = document.createElement('div');
+            slot.className = 'slot';
+            $(slot).width(opcoes.largura);
+            $(slot).height(opcoes.altura);
+            $(element).append(slot);
+            var cartao = math.subset(self.matrizCartao,math.index(x,y));
+            if (cartao != null) {
+                $(slot).append(cartao.elemento);
+            }
+        }
+        var clear = document.createElement('div');
+        clear.className = 'clearfix';
+        $(element).append(clear);
+    }
 };
