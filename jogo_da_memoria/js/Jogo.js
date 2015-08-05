@@ -3,7 +3,50 @@ function Jogo() {
     self.dificuldade = 4;
     self.matrizCartao = null;
     self.baralho = null;
+    self.cartao = null;
+    self.ocupado = false;
 }
+
+Jogo.prototype.selecionarCartao = function (cartao) {
+    var self = this;
+    if(!self.ocupado){
+        self.ocupado = true;
+        if (self.cartao == null) {
+            self.cartao = cartao;
+            cartao.girar();
+            console.log('passo primeira carta');
+            setTimeout(function(){
+                self.ocupado = false;
+            },500);
+        }
+        else if (cartao != self.cartao) {
+            cartao.girar();
+            setTimeout(function () {
+                if (self.cartao.id == cartao.id) {
+                    console.log('passo sucesso');
+                    cartao.toFront();
+                    self.cartao.toFront();
+                    cartao.bloqueado = true;
+                    self.cartao.bloqueado = true;
+                    self.cartao = null;
+                }
+                else {
+                    console.log('passo falha');
+                    self.cartao.toBack();
+                    cartao.toBack();
+                    self.cartao = null;
+                }
+            }, 1000);
+            setTimeout(function(){
+                self.ocupado = false;
+            },1000);
+        }
+        else {
+            console.log('passo mesma carta!');
+            self.ocupado = false;
+        }
+    }
+};
 
 Jogo.prototype.iniciar = function (element) {
     var self = this;
@@ -19,6 +62,7 @@ Jogo.prototype.carregar = function (url, callback) {
         dataType: 'json',
         success: function (baralho) {
             self.matrizCartao = math.zeros(self.dificuldade + 1, self.dificuldade + 1);
+            baralho["jogo"] = self;
             self.baralho = new Baralho(baralho);
             var max = (self.dificuldade + 1) * (self.dificuldade + 1);
             var count = 0;
@@ -84,8 +128,8 @@ Jogo.prototype.suffleMatrix = function () {
             var rand_x = parseInt(Math.floor(Math.random() * rows));
             var rand_y = parseInt(Math.floor(Math.random() * cols));
             var cartao = math.subset(matriz, math.index(x, y));
-            matriz = math.subset(matriz, math.index(x,y),math.subset(matriz,math.index(rand_x,rand_y)));
-            matriz = math.subset(matriz,math.index(rand_x,rand_y),cartao);
+            matriz = math.subset(matriz, math.index(x, y), math.subset(matriz, math.index(rand_x, rand_y)));
+            matriz = math.subset(matriz, math.index(rand_x, rand_y), cartao);
         }
     }
     self.matrizCartao = matriz;
@@ -117,8 +161,8 @@ Jogo.prototype.render = function (element, opcoes) {
             $(slot).height(opcoes.altura);
             $(element).append(slot);
             var cartao = math.subset(self.matrizCartao, math.index(x, y));
-            if (cartao != null) {
-                $(slot).append(cartao.elemento);
+            if (cartao != 0) {
+                $(slot).append(cartao.getElemento());
             }
         }
         var clear = document.createElement('div');

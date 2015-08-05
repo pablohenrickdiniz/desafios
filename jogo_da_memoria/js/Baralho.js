@@ -1,16 +1,16 @@
 function Baralho(options) {
     var self = this;
     self.titulo = options["titulo"];
-    self.imagem = options["imagem-fundo"];
     self.altura = options["altura"];
     self.largura = options["largura"];
     self.cartoes = {};
+    self.jogo = options["jogo"];
     if (options["cartoes"] instanceof Array) {
         var cartoes = options["cartoes"];
         for (var i = 0; i < cartoes.length; i++) {
+            cartoes[i]["fundo"] = options["fundo"];
+            cartoes[i]["baralho"] = self;
             var cartao = new Cartao(cartoes[i]);
-            cartao.setAltura(self.altura);
-            cartao.setLargura(self.largura);
             self.cartoes[cartao.id] = cartao;
         }
     }
