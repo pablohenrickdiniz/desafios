@@ -1,13 +1,14 @@
 function Jogo() {
     var self = this;
     self.dificuldade = 4;
-    self.matrizCartao = null;
     self.baralho = null;
     self.cartao = null;
     self.ocupado = false;
+    self.matriz = new Matriz(self.dificuldade+1,self.dificuldade+1);
 }
 
 Jogo.prototype.selecionarCartao = function (cartao) {
+    
     var self = this;
     if(!self.ocupado){
         self.ocupado = true;
@@ -19,10 +20,10 @@ Jogo.prototype.selecionarCartao = function (cartao) {
                 self.ocupado = false;
             },500);
         }
-        else if (cartao != self.cartao) {
+        else if (cartao != self.cartao){
             cartao.girar();
             setTimeout(function () {
-                if (self.cartao.id == cartao.id) {
+                if (self.cartao.par == cartao.id || cartao.id == self.cartao.id) {
                     console.log('passo sucesso');
                     cartao.toFront();
                     self.cartao.toFront();
@@ -55,14 +56,14 @@ Jogo.prototype.iniciar = function (element) {
 };
 
 Jogo.prototype.carregar = function (url, callback) {
+    
     var self = this;
     $.ajax({
         url: url,
         type: 'post',
         dataType: 'json',
         success: function (baralho) {
-            self.matrizCartao = math.zeros(self.dificuldade + 1, self.dificuldade + 1);
-            baralho["jogo"] = self;
+            baralho.jogo  = self;
             self.baralho = new Baralho(baralho);
             var max = (self.dificuldade + 1) * (self.dificuldade + 1);
             var count = 0;
@@ -74,7 +75,7 @@ Jogo.prototype.carregar = function (url, callback) {
                     count += 2;
                 }
             });
-            self.suffleMatrix();
+            self.matriz.suffle();
             callback.apply(self);
         },
         error: function () {
@@ -83,90 +84,43 @@ Jogo.prototype.carregar = function (url, callback) {
     });
 };
 
-Jogo.prototype.loadCartoes = function (baralho, jogo) {
-    var pares = jogo.pares == undefined ? [] : jogo.pares;
-};
-
 
 Jogo.prototype.insert = function (cartao) {
-    var position = this.getMatrixFreePosition();
     var self = this;
+    var position = self.getMatrixFreePosition();
+
     if (position != null) {
-        self.matrizCartao = math.subset(self.matrizCartao, math.index(position[0], position[1]), cartao);
+        self.matriz.set(position[0],position[1],cartao);
     }
 };
 
 Jogo.prototype.getMatrixFreePosition = function () {
+    var self = this;
     var index = null;
-    var self = this;
-
-    var rows = self.matrizCartao['_size'][0];
-    var cols = self.matrizCartao['_size'][1];
-
-    for (var x = 0; x < rows; x++) {
-        for (var y = 0; y < cols; y++) {
-            var cartao = math.subset(self.matrizCartao, math.index(x, y));
-            if (cartao == 0) {
-                index = [x, y];
-                break;
-            }
+    self.matriz.forEach(function(cartao,aux){
+        if(cartao == undefined){
+            index = aux;
+            return true;
         }
-    }
-
+    });;
     return index;
-};
-
-Jogo.prototype.suffleMatrix = function () {
-    var self = this;
-    var rows = self.matrizCartao['_size'][0];
-    var cols = self.matrizCartao['_size'][1];
-
-
-    var matriz = self.matrizCartao;
-    for (var x = 0; x < rows; x++) {
-        for (var y = 0; y < cols; y++) {
-            var rand_x = parseInt(Math.floor(Math.random() * rows));
-            var rand_y = parseInt(Math.floor(Math.random() * cols));
-            var cartao = math.subset(matriz, math.index(x, y));
-            matriz = math.subset(matriz, math.index(x, y), math.subset(matriz, math.index(rand_x, rand_y)));
-            matriz = math.subset(matriz, math.index(rand_x, rand_y), cartao);
-        }
-    }
-    self.matrizCartao = matriz;
-};
-
-Jogo.prototype.countCartoes = function () {
-    var count = 0;
-    var self = this;
-    self.matrizCartao.forEach(function (value) {
-        if (value != 0) {
-            count++;
-        }
-    });
-    return count;
 };
 
 Jogo.prototype.render = function (element, opcoes) {
     $(element).empty();
     var self = this;
-
-    var rows = self.matrizCartao['_size'][0];
-    var cols = self.matrizCartao['_size'][1];
-
-    for (var x = 0; x < rows; x++) {
-        for (var y = 0; y < cols; y++) {
-            var slot = document.createElement('div');
-            slot.className = 'slot';
-            $(slot).width(opcoes.largura);
-            $(slot).height(opcoes.altura);
-            $(element).append(slot);
-            var cartao = math.subset(self.matrizCartao, math.index(x, y));
-            if (cartao != 0) {
-                $(slot).append(cartao.getElemento());
-            }
+    self.matriz.forEach(function(cartao){
+        var slot = document.createElement('div');
+        slot.className = 'slot';
+        $(slot).width(opcoes.largura);
+        $(slot).height(opcoes.altura);
+        $(element).append(slot);
+        if (cartao != undefined) {
+            $(slot).append(cartao.getElemento());
         }
+    },function(){
         var clear = document.createElement('div');
         clear.className = 'clearfix';
         $(element).append(clear);
-    }
+    });
 };

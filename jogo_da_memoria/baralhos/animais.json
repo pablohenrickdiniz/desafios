@@ -1,6 +1,6 @@
 {
     "titulo": "Animais e seus gêneros",
-    "imagem-fundo": "",
+    "fundo": "img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
     "altura":"100",
     "largura":"100",
     "cartoes": [

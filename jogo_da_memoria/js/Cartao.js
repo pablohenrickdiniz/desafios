@@ -1,35 +1,38 @@
 function Cartao(options) {
     var self = this;
-    self.id = options["id"];
-    self.titulo = options["titulo"];
-    self.image = options["imagem"];
-    self.fundo = options["fundo"];
-    self.par = options["par"];
+    self.id = options.id;
+    self.titulo = options.titulo;
+    self.image = options.imagem;
+    self.fundo = options.fundo;
+    self.par = options.par;
     self.matriz = null;
     self.elemento = null;
     self.frontImage = null;
     self.backImage = null;
     self.bloqueado = false;
-    self.baralho = options["baralho"];
+    self.jogo = options.jogo;
+    self.instanceCount = 1;
 }
 
-Cartao.prototype.setBaralho = function(baralho) {
+Cartao.prototype.onclick = function() {
+    
     var self = this;
-    self.baralho = baralho;
+    if(!self.bloqueado){
+        if(self.jogo != null) {
+            self.jogo.selecionarCartao(self);
+        }
+    }
 };
 
+
 Cartao.prototype.getElemento = function() {
+    
     var self = this;
     if(self.elemento == null){
-        var self = this;
         self.elemento = document.createElement('div');
         $(self.elemento).addClass('cartao back');
-        $(self.elemento).click(function () {
-            if(!self.bloqueado){
-                if(self.baralho.jogo != null) {
-                    self.baralho.jogo.selecionarCartao(self);
-                }
-            }
+        $(self.elemento).click(function(){
+            self.onclick();
         });
         $(self.elemento).append(self.getFrontImage(),self.getBackImage());
     }
@@ -37,6 +40,7 @@ Cartao.prototype.getElemento = function() {
 };
 
 Cartao.prototype.getFrontImage = function(){
+    
     var self = this;
     if(self.frontImage == null){
         self.frontImage = document.createElement('img');
@@ -47,6 +51,7 @@ Cartao.prototype.getFrontImage = function(){
 };
 
 Cartao.prototype.getBackImage = function(){
+    
     var self = this;
     if(self.backImage == null){
         self.backImage = document.createElement('img');
@@ -56,32 +61,15 @@ Cartao.prototype.getBackImage = function(){
     return self.backImage;
 };
 
-Cartao.prototype.clone = function(){
-    var self = this;
-    var options = {
-        id:self.id,
-        titulo:self.titulo,
-        imagem:self.image,
-        par:self,
-        fundo:self.fundo,
-        baralho:self.baralho
-    };
-
-    var cartao = new Cartao(options);
-    return cartao;
-};
-
-Cartao.prototype.setPar = function (cartao) {
-    var self = this;
-    self.par = cartao;
-};
 
 Cartao.prototype.setImage = function (url) {
+    
     var self = this;
     self.image = url;
 };
 
 Cartao.prototype.toBack = function(){
+    
     var self = this;
     if(!$(self.getElemento()).hasClass('back')){
         $(self.getElemento()).addClass('back')
@@ -89,6 +77,7 @@ Cartao.prototype.toBack = function(){
 };
 
 Cartao.prototype.toFront = function(){
+    
     var self = this;
     if($(self.getElemento()).hasClass('back')){
         $(self.getElemento()).removeClass('back')
@@ -96,6 +85,7 @@ Cartao.prototype.toFront = function(){
 };
 
 Cartao.prototype.girar = function () {
+    
     var self = this;
     if ($(self.getElemento()).hasClass('back')) {
         $(self.getElemento()).removeClass('back');

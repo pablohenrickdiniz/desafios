@@ -1,35 +1,34 @@
 function Baralho(options) {
     var self = this;
-    self.titulo = options["titulo"];
-    self.altura = options["altura"];
-    self.largura = options["largura"];
-    self.cartoes = {};
-    self.jogo = options["jogo"];
+    self.titulo = options.titulo;
+    self.altura = options.altura;
+    self.largura = options.largura;
+    self.cartoes = [];
+    self.jogo = options.jogo;
     if (options["cartoes"] instanceof Array) {
-        var cartoes = options["cartoes"];
+        var cartoes = options.cartoes;
         for (var i = 0; i < cartoes.length; i++) {
-            cartoes[i]["fundo"] = options["fundo"];
-            cartoes[i]["baralho"] = self;
+            cartoes[i].fundo = options.fundo;
+            cartoes[i].jogo = self.jogo;
             var cartao = new Cartao(cartoes[i]);
-            self.cartoes[cartao.id] = cartao;
+            self.cartoes.push(cartao);
         }
-    }
-    self.carregarPares();
-}
 
-Baralho.prototype.carregarPares = function () {
-    var self = this;
-    Object.forEach(self.cartoes, function (cartao, key) {
-        var par = self.getCartaoById(cartao.par);
-        if (par != null) {
-            cartao.setPar(par);
-        }
-        else {
-            var clone = cartao.clone();
-            cartao.setPar(cartao.clone());
-        }
-    });
-};
+        self.cartoes.forEach(function(cartao,index){
+            if(cartao.instanceCount != 2){
+                if (cartao.id == cartao.par || cartao.par == undefined) {
+                    var aux = new Cartao(cartoes[index]);
+                    aux.instanceCount = 2;
+                    self.cartoes.push(aux);
+                }
+                else{
+                    var par = self.getCartaoByIdAndInstanceCount(cartao.par,1);
+                    par.instanceCount = 2;
+                }
+            }
+        });
+    }
+}
 
 Baralho.prototype.getCartoes = function () {
     return this.cartoes;
@@ -38,21 +37,27 @@ Baralho.prototype.getCartoes = function () {
 Baralho.prototype.getPares = function () {
     var self = this;
     var pares = [];
-    var cartoes = _.clone(self.cartoes);
-    Object.forEach(cartoes, function (val, key, obj) {
-        pares.push({cartaoA: val, cartaoB: val.par});
-        delete obj[key];
-        delete obj[val.par.id];
+    self.cartoes.forEach(function(cartao,index){
+        if(cartao.instanceCount == 1){
+            var id = cartao.par != undefined?cartao.par:cartao.id;
+            var clone = self.getCartaoByIdAndInstanceCount(id,2);
+            if(clone != null){
+                pares.push({cartaoA:cartao,cartaoB:clone});
+            }
+        }
     });
     return pares;
 };
 
-Baralho.prototype.getCartaoById = function (id) {
+Baralho.prototype.getCartaoByIdAndInstanceCount = function(id,instanceCount){
     var self = this;
-    var cartao = Object.forEach(self.cartoes, function (cartao) {
-        if (cartao.id == id) {
+    var size = self.cartoes.length;
+    for(var i = 0; i < size;i++){
+        var cartao  = self.cartoes[i];
+        if(cartao.id == id && cartao.instanceCount == instanceCount){
             return cartao;
         }
-    });
-    return cartao;
+    }
+    return null;
 };
+
