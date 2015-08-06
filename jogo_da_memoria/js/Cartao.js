@@ -12,6 +12,7 @@ function Cartao(options) {
     self.bloqueado = false;
     self.jogo = options.jogo;
     self.instanceCount = 1;
+    self.audio = new AudioPlayer();
 }
 
 Cartao.prototype.onclick = function() {
@@ -72,7 +73,8 @@ Cartao.prototype.toBack = function(){
     
     var self = this;
     if(!$(self.getElemento()).hasClass('back')){
-        $(self.getElemento()).addClass('back')
+        self.audio.play('sons/cardSlide1.wav');
+        $(self.getElemento()).addClass('back');
     }
 };
 
@@ -80,7 +82,8 @@ Cartao.prototype.toFront = function(){
     
     var self = this;
     if($(self.getElemento()).hasClass('back')){
-        $(self.getElemento()).removeClass('back')
+        self.audio.play('sons/cardSlide1.wav');
+        $(self.getElemento()).removeClass('back');
     }
 };
 
@@ -93,4 +96,5 @@ Cartao.prototype.girar = function () {
     else {
         $(self.getElemento()).addClass('back');
     }
+    self.audio.play('sons/cardSlide1.wav');
 };

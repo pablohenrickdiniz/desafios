@@ -5,6 +5,7 @@ function Jogo() {
     self.cartao = null;
     self.ocupado = false;
     self.matriz = new Matriz(self.dificuldade+1,self.dificuldade+1);
+    self.audio = new AudioPlayer('#game-audio');
 }
 
 Jogo.prototype.selecionarCartao = function (cartao) {
@@ -14,27 +15,32 @@ Jogo.prototype.selecionarCartao = function (cartao) {
         self.ocupado = true;
         if (self.cartao == null) {
             self.cartao = cartao;
-            cartao.girar();
+            cartao.toFront();
             console.log('passo primeira carta');
             setTimeout(function(){
                 self.ocupado = false;
             },500);
         }
         else if (cartao != self.cartao){
-            cartao.girar();
+            cartao.toFront();
             setTimeout(function () {
                 if (self.cartao.par == cartao.id || cartao.id == self.cartao.id) {
                     console.log('passo sucesso');
-                    cartao.toFront();
-                    self.cartao.toFront();
+                    self.audio.play('sons/109662__grunz__success.wav');
                     cartao.bloqueado = true;
                     self.cartao.bloqueado = true;
-                    self.cartao = null;
+                    self.cartao = null
+                    cartao.toFront();
+                    setTimeout(function(){
+                        cartao.toFront();
+                    },250);
                 }
                 else {
                     console.log('passo falha');
                     self.cartao.toBack();
-                    cartao.toBack();
+                    setTimeout(function(){
+                        cartao.toBack();
+                    },500);
                     self.cartao = null;
                 }
             }, 1000);

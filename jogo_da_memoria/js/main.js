@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var jogo = new Jogo();
-    jogo.carregar('baralhos/animais.json',function(){
+    jogo.carregar('baralhos/arte.json',function(){
         this.iniciar("#jogo");
     });
 });
