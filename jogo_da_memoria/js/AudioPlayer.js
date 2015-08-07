@@ -19,6 +19,10 @@ AudioPlayer.prototype.stop = function(){
     $(self.element)[0].stop();
 };
 
+AudioPlayer.prototype.destroy = function(){
+    $(this.element).remove();
+};
+
 function generateUUID() {
     var d = new Date().getTime();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

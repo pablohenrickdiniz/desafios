@@ -26,8 +26,8 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="#">Novo Jogo</a></li>
-                <li><a href="#">Opções</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modal-jogo"> Novo Jogo</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#opcoes">Opções</a></li>
                 <li><a href="#">Aparência</a></li>
             </ul>
         </div>
@@ -39,6 +39,45 @@
     <div class="row">
         <span class="jogo-info">Tempo: <i>00:00</i></span>
         <span class="jogo-info">Pontuação: <i>0</i></span>
+    </div>
+    <div class="modal fade" id="modal-jogo">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Novo Jogo</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a class="baralho-link" href="#" json="baralhos/animais.json">Animais e os seus gêneros</a></li>
+                        <li><a class="baralho-link" href="#" json="baralhos/arte.json">História da Arte</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="opcoes">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Opções</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Dificuldade</label><br/>
+                        <input type="radio" name="dificuldade" value="2"/><label for="">Fácil</label>
+                        <input type="radio" name="dificuldade" value="3" checked/><label for="">Normal</label>
+                        <input type="radio" name="dificuldade" value="4"/><label for="">Médio</label>
+                        <input type="radio" name="dificuldade" value="5"/><label for="">Difícil</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="tempo"/>
+                        <label for="">Contador de Tempo?</label>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div>
 </div>
 </body>

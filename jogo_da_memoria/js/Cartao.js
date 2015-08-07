@@ -1,19 +1,30 @@
 function Cartao(options) {
     var self = this;
-    self.id = options.id;
-    self.titulo = options.titulo;
-    self.image = options.imagem;
-    self.fundo = options.fundo;
-    self.par = options.par;
-    self.matriz = null;
     self.elemento = null;
     self.frontImage = null;
     self.backImage = null;
     self.bloqueado = false;
-    self.jogo = options.jogo;
     self.instanceCount = 1;
     self.audio = new AudioPlayer();
+    if(options != undefined){
+        self.id = options.id;
+        self.titulo = options.titulo;
+        self.image = options.imagem;
+        self.par = options.par;
+    }
+
 }
+
+Cartao.prototype.clone = function(){
+    var self = this;
+    var cartao = new Cartao();
+    cartao.id = self.id;
+    cartao.titulo = self.titulo;
+    cartao.image = self.image;
+    cartao.par = self.par;
+    cartao.instanceCount = self.instanceCount+1;
+    return cartao;
+};
 
 Cartao.prototype.onclick = function() {
     var self = this;
@@ -22,6 +33,11 @@ Cartao.prototype.onclick = function() {
             self.jogo.selecionarCartao(self);
         }
     }
+};
+
+Cartao.prototype.destroy = function(){
+    var self = this;
+    self.audio.destroy();
 };
 
 
@@ -69,10 +85,10 @@ Cartao.prototype.setImage = function (url) {
 };
 
 Cartao.prototype.toBack = function(){
-    
+
     var self = this;
     if(!$(self.getElemento()).hasClass('back')){
-        self.audio.play('sons/cardSlide1.wav');
+        self.audio.play(self.somViraCarta);
         $(self.getElemento()).addClass('back');
     }
 };
@@ -81,7 +97,7 @@ Cartao.prototype.toFront = function(){
     
     var self = this;
     if($(self.getElemento()).hasClass('back')){
-        self.audio.play('sons/cardSlide1.wav');
+        self.audio.play(self.somViraCarta);
         $(self.getElemento()).removeClass('back');
     }
 };
@@ -95,5 +111,5 @@ Cartao.prototype.girar = function () {
     else {
         $(self.getElemento()).addClass('back');
     }
-    self.audio.play('sons/cardSlide1.wav');
+    self.audio.play(self.somViraCarta);
 };

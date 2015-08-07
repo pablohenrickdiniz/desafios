@@ -46,3 +46,15 @@ Matriz.prototype.suffle = function(){
         self.set(index[0],index[1],tmp);
     });
 };
+
+
+Array.prototype.suffle = function(){
+    var self = this;
+    var size = self.length;
+    for(var i = 0; i < size;i++){
+        var rand_index = Math.floor(Math.random()*size);
+        var tmp = self[i];
+        self[i] = self[rand_index];
+        self[rand_index] = tmp;
+    }
+};

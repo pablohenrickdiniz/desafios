@@ -1,8 +1,12 @@
 {
     "titulo": "Animais e seus gêneros",
-    "fundo": "img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
-    "altura":"100",
-    "largura":"100",
+    "fundo": "img/backgrounds/cheetah-card.gif",
+    "altura":"130",
+    "largura":"130",
+    "sons": {
+        "virarCarta": "sons/cardSlide1.wav",
+        "parEncontrado":"sons/109662__grunz__success.wav"
+    },
     "cartoes": [
         {
             "id":"001",
@@ -195,6 +199,11 @@
             "titulo": "Sapo",
             "imagem": "img/animais/sapo-min.png",
             "par":"031"
+        },
+        {
+            "id":"33",
+            "titulo":"Sex Girl",
+            "imagem":"http://perpetualmemoryloss.files.wordpress.com/2008/06/cntower.jpg"
         }
     ]
 }

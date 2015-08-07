@@ -5,21 +5,29 @@ function Baralho(options) {
     self.largura = options.largura;
     self.cartoes = [];
     self.jogo = options.jogo;
+    self.sons = options.sons;
     if (options["cartoes"] instanceof Array) {
         var cartoes = options.cartoes;
         for (var i = 0; i < cartoes.length; i++) {
-            cartoes[i].fundo = options.fundo;
-            cartoes[i].jogo = self.jogo;
             var cartao = new Cartao(cartoes[i]);
+            cartao.jogo = self.jogo;
+            cartao.fundo= options.fundo;
+            cartao.somViraCarta = options.sons.viraCarta;
             self.cartoes.push(cartao);
         }
+
+        var novos = [];
 
         self.cartoes.forEach(function(cartao,index){
             if(cartao.instanceCount != 2){
                 if (cartao.id == cartao.par || cartao.par == undefined) {
                     var aux = new Cartao(cartoes[index]);
+                    aux.jogo = self.jogo;
+                    aux.fundo= options.fundo;
+                    aux.somViraCarta = options.sons.viraCarta;
+                    aux.par = cartao.id;
                     aux.instanceCount = 2;
-                    self.cartoes.push(aux);
+                    novos.push(aux);
                 }
                 else{
                     var par = self.getCartaoByIdAndInstanceCount(cartao.par,1);
@@ -27,6 +35,8 @@ function Baralho(options) {
                 }
             }
         });
+
+        self.cartoes = self.cartoes.concat(novos);
     }
 }
 

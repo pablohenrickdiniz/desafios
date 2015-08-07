@@ -3,6 +3,10 @@
     "fundo": "img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
     "altura": "150",
     "largura": "100",
+    "sons": {
+        "viraCarta": "sons/cardSlide1.wav",
+        "parEncontrado":"sons/109662__grunz__success.wav"
+    },
     "cartoes": [
         {
             "id": "001",

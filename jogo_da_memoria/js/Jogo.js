@@ -1,12 +1,34 @@
 function Jogo() {
     var self = this;
-    self.dificuldade = 4;
+    self.dificuldade = 3;
+    self.audio = new AudioPlayer('#game-audio');
+    self.element = null;
+    self.somViraCarta =  null;
+    self.initialize();
+}
+
+Jogo.prototype.initialize = function(){
+    var self = this;
     self.baralho = null;
     self.cartao = null;
     self.ocupado = false;
+    if(self.matriz instanceof  Matriz){
+        self.matriz.forEach(function(cartao){
+            if(cartao instanceof  Cartao){
+                cartao.destroy();
+            }
+        });
+    }
+
+
     self.matriz = new Matriz(self.dificuldade+1,self.dificuldade+1);
-    self.audio = new AudioPlayer('#game-audio');
-}
+};
+
+
+
+Jogo.prototype.setElement = function(element) {
+    this.element = element;
+};
 
 Jogo.prototype.selecionarCartao = function (cartao) {
 
@@ -26,10 +48,10 @@ Jogo.prototype.selecionarCartao = function (cartao) {
             setTimeout(function () {
                 if (self.cartao.par == cartao.id || cartao.id == self.cartao.id) {
                     console.log('passo sucesso');
-                    self.audio.play('sons/109662__grunz__success.wav');
+                    self.audio.play(self.baralho.sons.parEncontrado);
                     cartao.bloqueado = true;
                     self.cartao.bloqueado = true;
-                    self.cartao = null
+                    self.cartao = null;
                     cartao.toFront();
                     setTimeout(function(){
                         cartao.toFront();
@@ -55,25 +77,26 @@ Jogo.prototype.selecionarCartao = function (cartao) {
     }
 };
 
-Jogo.prototype.iniciar = function (element) {
+Jogo.prototype.iniciar = function () {
     var self = this;
     var baralho = self.baralho;
-    self.render(element, baralho);
+    self.render(self.element, baralho);
 };
 
 Jogo.prototype.carregar = function (url, callback) {
-    
     var self = this;
     $.ajax({
         url: url,
         type: 'post',
         dataType: 'json',
         success: function (baralho) {
+            self.initialize();
             baralho.jogo  = self;
             self.baralho = new Baralho(baralho);
             var max = (self.dificuldade + 1) * (self.dificuldade + 1);
             var count = 0;
             var pares = self.baralho.getPares();
+            pares.suffle();
             pares.forEach(function (par) {
                 if (count < max - 1) {
                     self.insert(par.cartaoA);
