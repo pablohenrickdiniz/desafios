@@ -35,14 +35,31 @@
     position:absolute;
 }
 
+.title{
+    font-size:12px;
+    font-weight: bolder;
+    position:absolute;
+    bottom:0%;
+    text-align: center;
+    width:100%;
+    z-index:3;
+    color:white;
+}
 
-.cartao .front-image, .cartao.back .front-image, .cartao.back .back-image, .cartao .back-image{
+
+.cartao.back .title{
+    visibility: hidden;
+}
+
+
+.cartao .front-image, .cartao.back .front-image, .cartao.back .back-image, .cartao .back-image,.cartao.back .title,.cartao .title{
     transition-property: visibility;
     transition-delay: 300ms;
 }
 
 .cartao .front-image{
     visibility: visible;
+    z-index:2;
 }
 
 .cartao.back .front-image{
@@ -51,6 +68,7 @@
 
 .cartao.back .back-image{
     visibility: visible;
+    z-index:2;
 }
 
 .cartao .back-image{
@@ -96,3 +114,4 @@
 .jogo-opcoes{
     padding-top:10px;
 }
+

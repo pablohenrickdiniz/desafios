@@ -3,8 +3,9 @@
     "fundo": "img/backgrounds/cheetah-card.gif",
     "altura":"130",
     "largura":"130",
+    "fontColor":"black",
     "sons": {
-        "virarCarta": "sons/cardSlide1.wav",
+        "viraCarta": "sons/cardSlide1.wav",
         "parEncontrado":"sons/109662__grunz__success.wav"
     },
     "cartoes": [
@@ -199,11 +200,6 @@
             "titulo": "Sapo",
             "imagem": "img/animais/sapo-min.png",
             "par":"031"
-        },
-        {
-            "id":"33",
-            "titulo":"Sex Girl",
-            "imagem":"http://perpetualmemoryloss.files.wordpress.com/2008/06/cntower.jpg"
         }
     ]
 }

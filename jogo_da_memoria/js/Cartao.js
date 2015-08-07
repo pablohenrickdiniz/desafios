@@ -3,6 +3,7 @@ function Cartao(options) {
     self.elemento = null;
     self.frontImage = null;
     self.backImage = null;
+    self.titleElement = null;
     self.bloqueado = false;
     self.instanceCount = 1;
     self.audio = new AudioPlayer();
@@ -50,9 +51,21 @@ Cartao.prototype.getElemento = function() {
         $(self.elemento).click(function(){
             self.onclick();
         });
-        $(self.elemento).append(self.getFrontImage(),self.getBackImage());
+        $(self.elemento).append(self.getFrontImage(),self.getBackImage(),self.getTitleElement());
     }
     return self.elemento;
+};
+
+
+Cartao.prototype.getTitleElement = function(){
+    var self = this;
+    if(self.titleElement == null){
+        self.titleElement = document.createElement('div');
+        $(self.titleElement).addClass('title');
+        $(self.titleElement).html(self.titulo);
+        $(self.titleElement).css('color',self.fontColor);
+    }
+    return self.titleElement;
 };
 
 Cartao.prototype.getFrontImage = function(){

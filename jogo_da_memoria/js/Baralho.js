@@ -13,6 +13,7 @@ function Baralho(options) {
             cartao.jogo = self.jogo;
             cartao.fundo= options.fundo;
             cartao.somViraCarta = options.sons.viraCarta;
+            cartao.fontColor = options.fontColor;
             self.cartoes.push(cartao);
         }
 
