@@ -9,7 +9,7 @@ function Jogo() {
 }
 
 Jogo.prototype.selecionarCartao = function (cartao) {
-    
+
     var self = this;
     if(!self.ocupado){
         self.ocupado = true;
@@ -115,11 +115,18 @@ Jogo.prototype.getMatrixFreePosition = function () {
 Jogo.prototype.render = function (element, opcoes) {
     $(element).empty();
     var self = this;
-    self.matriz.forEach(function(cartao){
+    var largura = self.baralho.largura;
+    var altura = self.baralho.altura;
+    $(element).height((altura*self.matriz.rows)+10);
+    $(element).width((largura*self.matriz.cols)+10);
+
+    self.matriz.forEach(function(cartao,index){
         var slot = document.createElement('div');
         slot.className = 'slot';
         $(slot).width(opcoes.largura);
         $(slot).height(opcoes.altura);
+        $(slot).css('left',(largura*index[1])+'px');
+        $(slot).css('top',(altura*index[0])+'px');
         $(element).append(slot);
         if (cartao != undefined) {
             $(slot).append(cartao.getElemento());

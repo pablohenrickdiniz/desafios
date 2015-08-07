@@ -16,7 +16,6 @@ function Cartao(options) {
 }
 
 Cartao.prototype.onclick = function() {
-    
     var self = this;
     if(!self.bloqueado){
         if(self.jogo != null) {
@@ -45,8 +44,8 @@ Cartao.prototype.getFrontImage = function(){
     var self = this;
     if(self.frontImage == null){
         self.frontImage = document.createElement('img');
-        $(self.frontImage).attr('src',self.image);
-        $(self.frontImage).addClass('front-image');
+        $(self.frontImage).attr('data-original',self.image);
+        $(self.frontImage).addClass('front-image lazy');
     }
     return self.frontImage;
 };
@@ -56,8 +55,8 @@ Cartao.prototype.getBackImage = function(){
     var self = this;
     if(self.backImage == null){
         self.backImage = document.createElement('img');
-        $(self.backImage).attr('src',self.fundo);
-        $(self.backImage).addClass('back-image');
+        $(self.backImage).attr('data-original',self.fundo);
+        $(self.backImage).addClass('back-image lazy');
     }
     return self.backImage;
 };

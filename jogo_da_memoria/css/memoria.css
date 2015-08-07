@@ -11,6 +11,10 @@
     width:100%;
     height:100%;
     position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;;
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -58,11 +62,16 @@
     background-color: white;
     margin:5px 5px 5px 5px;
     border: 1px solid #EEE;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
 }
 
 .memoria-container {
     border:1px solid #DDD;
-    display: inline-block;
+    position: relative;
 }
 
 .cartao:hover{
