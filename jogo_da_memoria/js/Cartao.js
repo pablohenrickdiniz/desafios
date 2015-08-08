@@ -2,6 +2,7 @@ function Cartao(options) {
     var self = this;
     self.instanceCount = 1;
     self.audio = new AudioPlayer();
+    self.slot = null;
     if(options != undefined){
         self.id = options.id;
         self.titulo = options.titulo;
@@ -122,6 +123,14 @@ Cartao.prototype.toFront = function(){
         self.audio.play(self.somViraCarta);
         $(self.getElemento()).removeClass('back');
     }
+};
+
+Cartao.prototype.isFront = function(){
+    return !this.isBack();
+};
+
+Cartao.prototype.isBack = function(){
+    return $(this.getElemento()).hasClass('back');
 };
 
 Cartao.prototype.girar = function () {

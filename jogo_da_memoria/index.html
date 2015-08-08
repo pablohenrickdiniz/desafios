@@ -39,7 +39,7 @@
 
     </div>
     <div class="row">
-        <span class="jogo-info" id="tempo">Tempo: <i>00:00:00</i></span>
+        <span class="jogo-info tempo">Tempo: <i>00:00:00</i></span>
     </div>
     <div class="modal fade" id="modal-jogo">
         <div class="modal-dialog modal-sm">
@@ -52,6 +52,7 @@
                     <ul>
                         <li><a class="baralho-link" href="#" json="baralhos/animais.json">Animais e os seus gêneros</a></li>
                         <li><a class="baralho-link" href="#" json="baralhos/arte.json">História da Arte</a></li>
+                        <li><a class="baralho-link" href="#" json="baralhos/frutas.json">Frutas e Legumes</a></li>
                     </ul>
                 </div>
             </div><!-- /.modal-content -->
@@ -67,10 +68,10 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="">Dificuldade</label><br/>
-                        <input type="radio" name="dificuldade" value="2"/><label for="">Fácil</label>
-                        <input type="radio" name="dificuldade" value="3" checked/><label for="">Normal</label>
-                        <input type="radio" name="dificuldade" value="4"/><label for="">Médio</label>
-                        <input type="radio" name="dificuldade" value="5"/><label for="">Difícil</label>
+                        <input type="radio" name="dificuldade" value="1"/><label for="">Fácil</label>
+                        <input type="radio" name="dificuldade" value="2" checked/><label for="">Normal</label>
+                        <input type="radio" name="dificuldade" value="3"/><label for="">Médio</label>
+                        <input type="radio" name="dificuldade" value="4"/><label for="">Difícil</label>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="tempo"/>
@@ -79,6 +80,21 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" id="confirmar-opcao">OK</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="completo">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Jogo Completo!</h4>
+                </div>
+                <div class="modal-body">
+                    <span class="jogo-info tempo">Tempo: <i>00:00:00</i></span>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="confirmar-jogo">OK</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->

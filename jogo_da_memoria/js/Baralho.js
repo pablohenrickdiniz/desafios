@@ -27,6 +27,7 @@ function Baralho(options) {
                     aux.fundo= options.fundo;
                     aux.somViraCarta = options.sons.viraCarta;
                     aux.par = cartao.id;
+                    aux.fontColor = options.fontColor;
                     aux.instanceCount = 2;
                     novos.push(aux);
                 }

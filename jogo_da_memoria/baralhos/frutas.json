@@ -1,0 +1,118 @@
+{
+    "titulo": "Frutas",
+    "fundo": "img/backgrounds/frutas-background.jpg",
+    "altura": "150",
+    "largura": "150",
+    "fontColor": "black",
+    "sons": {
+        "viraCarta": "sons/cardSlide1.wav",
+        "parEncontrado": "sons/109662__grunz__success.wav"
+    },
+    "cartoes": [
+        {
+            "id": "001",
+            "titulo": "Abacaxi",
+            "imagem": "img/frutas-legumes/abacaxi-min.png"
+        },
+        {
+            "id":"002",
+            "titulo":"Banana",
+            "imagem":"img/frutas-legumes/banana-min.png"
+        },
+        {
+            "id":"003",
+            "titulo":"Bananas",
+            "imagem":"img/frutas-legumes/bananas-min.png"
+        },
+        {
+            "id":"004",
+            "titulo":"Beringela",
+            "imagem":"img/frutas-legumes/beringela-min.png"
+        },
+        {
+            "id":"005",
+            "titulo":"Cenoura",
+            "imagem":"img/frutas-legumes/cenoura-min.png"
+        },
+        {
+            "id":"006",
+            "titulo":"Cereja",
+            "imagem":"img/frutas-legumes/cereja-min.png"
+        },
+        {
+            "id":"007",
+            "titulo":"Coco",
+            "imagem":"img/frutas-legumes/coco-min.png"
+        },
+        {
+            "id":"008",
+            "titulo":"Jabuticaba",
+            "imagem":"img/frutas-legumes/jabuticaba-min.png"
+        },
+        {
+            "id":"009",
+            "titulo":"Kiwi",
+            "imagem":"img/frutas-legumes/kiwi-min.png"
+        },
+        {
+            "id":"010",
+            "titulo":"Laranja",
+            "imagem":"img/frutas-legumes/laranja-min.png"
+        },
+        {
+            "id":"011",
+            "titulo":"Laranjas",
+            "imagem":"img/frutas-legumes/laranjas-min.png"
+        },
+        {
+            "id":"012",
+            "titulo":"Limão",
+            "imagem":"img/frutas-legumes/limao-min.png"
+        },
+        {
+            "id":"013",
+            "titulo":"Maçã",
+            "imagem":"img/frutas-legumes/maca-min.png"
+        },
+        {
+            "id":"014",
+            "titulo":"Melancia",
+            "imagem":"img/frutas-legumes/melancia-min.png"
+        },
+        {
+            "id":"015",
+            "titulo":"Morango",
+            "imagem":"img/frutas-legumes/morango-min.png"
+        },
+        {
+            "id":"016",
+            "titulo":"Pera",
+            "imagem":"img/frutas-legumes/pera-min.png"
+        },
+        {
+            "id":"017",
+            "titulo":"Pêssego",
+            "imagem":"img/frutas-legumes/pessego-min.png"
+        },
+        {
+            "id":"018",
+            "titulo":"Pimenta",
+            "imagem":"img/frutas-legumes/pimenta-min.png"
+        },
+        {
+            "id":"019",
+            "titulo":"Pimentão",
+            "imagem":"img/frutas-legumes/pimentao-min.png"
+        },
+        {
+            "id":"020",
+            "titulo":"Tomate",
+            "imagem":"img/frutas-legumes/tomate-min.png"
+        },
+        {
+            "id":"021",
+            "titulo":"Uvas",
+            "imagem":"img/frutas-legumes/uvas-min.png"
+        }
+    ]
+}

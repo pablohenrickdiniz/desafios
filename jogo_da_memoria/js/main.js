@@ -53,6 +53,14 @@ $(document).ready(function(){
         }
         $("#opcoes").modal('hide');
     });
+
+    $('#confirmar-jogo').click(function(){
+        $('#completo').modal('hide');
+    });
+
+    $('#completo').on('hidden.bs.modal',function(e){
+        jogo.reiniciarJogo();
+    });
 });
 
 
