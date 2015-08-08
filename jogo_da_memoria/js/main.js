@@ -20,11 +20,41 @@ $(document).ready(function(){
             $('#modal-jogo').modal('hide');
             var json = $(this).attr('json');
             jogo.carregar(json,function(){
-                this.iniciar('#jogo');
+                this.iniciar();
             });
         }
     });
+
+    $('#opcoes,#modal-jogo').on('shown.bs.modal', function (e) {
+        jogo.pausar();
+    });
+
+    $('#opcoes,#modal-jogo').on('hidden.bs.modal', function (e) {
+        jogo.continuar();
+    });
+
+    $(document).on('contextmenu',function(e){
+        //e.preventDefault();
+    });
+
+    Keys.allowOnly([KEY_PF5])
+
+    $('#confirmar-opcao').click(function(){
+        var dificuldade = $('input[name=dificuldade]:checked').val();
+        dificuldade = parseInt(dificuldade);
+        console.log(dificuldade);
+        console.log(jogo.dificuldade);
+        if(jogo.dificuldade != dificuldade){
+            jogo.dificuldade = dificuldade;
+            var confirm = window.confirm('Deseja abandonar a partida atual?');
+            if(confirm){
+                jogo.iniciar();
+            }
+        }
+        $("#opcoes").modal('hide');
+    });
 });
+
 
 
 

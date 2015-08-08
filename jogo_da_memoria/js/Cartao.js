@@ -1,10 +1,5 @@
 function Cartao(options) {
     var self = this;
-    self.elemento = null;
-    self.frontImage = null;
-    self.backImage = null;
-    self.titleElement = null;
-    self.bloqueado = false;
     self.instanceCount = 1;
     self.audio = new AudioPlayer();
     if(options != undefined){
@@ -13,8 +8,21 @@ function Cartao(options) {
         self.image = options.imagem;
         self.par = options.par;
     }
-
+    self.initialize();
 }
+
+Cartao.prototype.initialize = function(){
+    var self = this;
+    self.bloqueado = false;
+    self.elemento = null;
+    self.frontImage = null;
+    self.backImage = null;
+    self.titleElement = null;
+    if(!$(self.getElemento()).hasClass('back')){
+        $(self.getElemento()).addClass('back');
+    }
+    console.log('cartao initialize...');
+};
 
 Cartao.prototype.clone = function(){
     var self = this;
@@ -39,6 +47,7 @@ Cartao.prototype.onclick = function() {
 Cartao.prototype.destroy = function(){
     var self = this;
     self.audio.destroy();
+    $(self.elemento).remove();
 };
 
 

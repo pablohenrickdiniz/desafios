@@ -1,30 +1,25 @@
 function Jogo() {
     var self = this;
     self.dificuldade = 3;
-    self.audio = new AudioPlayer('#game-audio');
+    self.audio = new AudioPlayer();
+    self.baralho = null;
     self.element = null;
-    self.somViraCarta =  null;
-    self.initialize();
 }
 
 Jogo.prototype.initialize = function(){
+    console.log('jogo initialize...');
     var self = this;
-    self.baralho = null;
     self.cartao = null;
     self.ocupado = false;
-    if(self.matriz instanceof  Matriz){
-        self.matriz.forEach(function(cartao){
-            if(cartao instanceof  Cartao){
-                cartao.destroy();
-            }
-        });
+    self.inicio = null;
+    self.tempo = null;
+    self.matriz = null;
+    self.pausado = false;
+    self.somViraCarta =  null;
+    if(self.baralho != null){
+        self.baralho.initialize();
     }
-
-
-    self.matriz = new Matriz(self.dificuldade+1,self.dificuldade+1);
 };
-
-
 
 Jogo.prototype.setElement = function(element) {
     this.element = element;
@@ -53,16 +48,13 @@ Jogo.prototype.selecionarCartao = function (cartao) {
                     self.cartao.bloqueado = true;
                     self.cartao = null;
                     cartao.toFront();
-                    setTimeout(function(){
-                        cartao.toFront();
-                    },250);
                 }
                 else {
                     console.log('passo falha');
                     self.cartao.toBack();
                     setTimeout(function(){
                         cartao.toBack();
-                    },500);
+                    },200);
                     self.cartao = null;
                 }
             }, 1000);
@@ -79,8 +71,55 @@ Jogo.prototype.selecionarCartao = function (cartao) {
 
 Jogo.prototype.iniciar = function () {
     var self = this;
-    var baralho = self.baralho;
-    self.render(self.element, baralho);
+    self.initialize();
+    self.carregarMatriz();
+    self.render(self.element, self.baralho);
+    self.inicio = moment();
+    self.tempo = moment('0000-01-01 00:00:00');
+    self.pausar();
+    self.setTempo('00:00:00');
+    self.continuar();
+};
+
+Jogo.prototype.continuar = function(){
+    var self = this;
+    if(self.pausado){
+        self.contador = setInterval(function(){
+            self.tempo.add(1,'seconds');
+            self.setTempo(self.tempo.format('HH:mm:ss'));
+        },1000);
+        self.pausado = false;
+    }
+};
+
+Jogo.prototype.pausar = function(){
+    var self = this;
+    if(!self.pausado){
+        clearInterval(self.contador);
+        self.pausado = true;
+    }
+};
+
+Jogo.prototype.setTempo = function(tempo){
+    $('#tempo').find('i').html(tempo);
+};
+
+
+Jogo.prototype.carregarMatriz = function(){
+    var self = this;
+    self.matriz = new Matriz(self.dificuldade + 1,self.dificuldade + 1);
+    var max = (self.dificuldade + 1) * (self.dificuldade + 1);
+    var count = 0;
+    var pares = self.baralho.getPares();
+    pares.suffle();
+    pares.forEach(function (par) {
+        if (count < max - 1) {
+            self.insert(par.cartaoA);
+            self.insert(par.cartaoB);
+            count += 2;
+        }
+    });
+    self.matriz.suffle();
 };
 
 Jogo.prototype.carregar = function (url, callback) {
@@ -90,21 +129,8 @@ Jogo.prototype.carregar = function (url, callback) {
         type: 'post',
         dataType: 'json',
         success: function (baralho) {
-            self.initialize();
             baralho.jogo  = self;
             self.baralho = new Baralho(baralho);
-            var max = (self.dificuldade + 1) * (self.dificuldade + 1);
-            var count = 0;
-            var pares = self.baralho.getPares();
-            pares.suffle();
-            pares.forEach(function (par) {
-                if (count < max - 1) {
-                    self.insert(par.cartaoA);
-                    self.insert(par.cartaoB);
-                    count += 2;
-                }
-            });
-            self.matriz.suffle();
             callback.apply(self);
         },
         error: function () {

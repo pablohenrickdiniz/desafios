@@ -41,6 +41,15 @@ function Baralho(options) {
     }
 }
 
+Baralho.prototype.initialize = function(){
+    console.log('baralho initilize...');
+    var self = this;
+    self.cartoes.forEach(function(cartao){
+        cartao.destroy();
+        cartao.initialize();
+    });
+};
+
 Baralho.prototype.getCartoes = function () {
     return this.cartoes;
 };

@@ -9,6 +9,8 @@
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../bower_components/jquery.lazyload/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/keys.js"></script>
     <script type="text/javascript" src="js/AudioPlayer.js"></script>
     <script type="text/javascript" src="js/Matriz.js"></script>
     <script type="text/javascript" src="js/Baralho.js"></script>
@@ -33,18 +35,11 @@
         </div>
     </div>
     <div id="jogo" class="row memoria-container">
-        <div class="slot" style='width:100px;height:150px'>
-            <div class="cartao">
-                <div class="title">
-                    Carta
-                </div>
-            </div>
-        </div>
+
+
     </div>
-    <audio id="game-audio" src=""></audio>
     <div class="row">
-        <span class="jogo-info">Tempo: <i>00:00</i></span>
-        <span class="jogo-info">Pontuação: <i>0</i></span>
+        <span class="jogo-info" id="tempo">Tempo: <i>00:00:00</i></span>
     </div>
     <div class="modal fade" id="modal-jogo">
         <div class="modal-dialog modal-sm">
@@ -81,6 +76,9 @@
                         <input type="checkbox" name="tempo"/>
                         <label for="">Contador de Tempo?</label>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="confirmar-opcao">OK</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
