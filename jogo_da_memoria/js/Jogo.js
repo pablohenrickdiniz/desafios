@@ -80,13 +80,15 @@ Jogo.prototype.reiniciarJogo = function () {
     self.ocupado = false;
     self.inicio = null;
     self.tempo = null;
-    self.pausado = false;
+    self.pausado = true;
     var count = 1;
     self.matriz.forEach(function (cartao, index) {
-        cartao.bloqueado = false;
-        setTimeout(function () {
-            cartao.toBack();
-        }, 100 * count);
+        if(cartao instanceof  Cartao){
+            cartao.bloqueado = false;
+            setTimeout(function () {
+                cartao.toBack();
+            }, 100 * count);
+        }
         count++;
     });
     count+=10;
@@ -133,6 +135,9 @@ Jogo.prototype.suffleAux = function (i, j) {
             self.suffleAux(i,j+1);
         }
     }
+    else{
+        self.continuar();
+    }
 };
 
 
@@ -167,6 +172,9 @@ Jogo.prototype.continuar = function () {
     var self = this;
     if (self.pausado) {
         self.contador = setInterval(function () {
+            if(self.tempo == null){
+                self.tempo = moment('0000-01-01 00:00:00');
+            }
             self.tempo.add(1, 'seconds');
             self.setTempo(self.tempo.format('HH:mm:ss'));
         }, 1000);

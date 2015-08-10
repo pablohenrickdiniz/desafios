@@ -1,6 +1,6 @@
 {
     "titulo": "História da arte",
-    "fundo": "img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
+    "fundo": "http://www.phydokz.xpg.com.br/baralhos/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
     "altura": "150",
     "largura": "100",
     "fontColor":"white",
@@ -12,62 +12,62 @@
         {
             "id": "001",
             "titulo": "Mosaic of Christ - 1100-1150",
-            "imagem": "img/arte/mosaico_de_cristo.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/mosaico_de_cristo.png"
         },
         {
             "id": "002",
             "titulo": "Mona Lisa - Leonardo da Vinci 1503-1508",
-            "imagem": "img/arte/monalisa.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/monalisa.png"
         },
         {
             "id": "003",
             "titulo": "Ife Head - Africa 12th-14th Century",
-            "imagem": "img/arte/ife_head.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/ife_head.png"
         },
         {
             "id": "004",
             "titulo": "Frida Kahlo - Self Portrait 1941",
-            "imagem": "img/arte/frida_kahlo.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/frida_kahlo.png"
         },
         {
             "id": "005",
             "titulo": "Girl with the Pearl Earring Johannes Vermeer",
-            "imagem": "img/arte/Girl with the Pearl.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Girl with the Pearl.png"
         },
         {
             "id": "006",
             "titulo": "Statue of Budda - 4th Century",
-            "imagem": "img/arte/Statue of Budda - 4th Century.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Statue of Budda - 4th Century.png"
         },
         {
             "id": "007",
             "titulo": "Margot in Blue - Mary Cassatt 1902",
-            "imagem": "img/arte/Margot_in_blue.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Margot_in_blue.png"
         },
         {
             "id": "008",
             "titulo": "Madonna and Child - Giotto",
-            "imagem": "img/arte/Madonna and Child - Giotto.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Madonna and Child - Giotto.png"
         },
         {
             "id": "009",
             "titulo": "Vincent van Gogh - Self Portrait 1887",
-            "imagem": "img/arte/Vicent_Van_Gogh.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Vicent_Van_Gogh.png"
         },
         {
             "id": "010",
             "titulo": "Portrait of a Lady with a Unicorn Raphael Sanzio - 1505",
-            "imagem": "img/arte/Portrait_of_a_lady_with_unicorn.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Portrait_of_a_lady_with_unicorn.png"
         },
         {
             "id": "011",
             "titulo": "Marguerite - Henri Matisse 1906",
-            "imagem": "img/arte/Marguerite.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Marguerite.png"
         },
         {
             "id": "012",
             "titulo": "Cats - Andy Warhol 1955-1965",
-            "imagem": "img/arte/Cats.png"
+            "imagem": "http://www.phydokz.xpg.com.br/baralhos/arte/Cats.png"
         }
     ]
 }

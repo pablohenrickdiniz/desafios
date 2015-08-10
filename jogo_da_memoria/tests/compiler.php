@@ -1,0 +1,1 @@
+<?php include('js_minifier.php')?>

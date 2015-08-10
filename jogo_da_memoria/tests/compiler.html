@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Compilador</title>
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        var ocupado = false;
+        setInterval(function(){
+            if(!ocupado) {
+                ocupado = true;
+                $.ajax({
+                    url:'compiler.php',
+                    type:'post',
+                    dataType:'json',
+                    success:function(data){
+                        $('body').append('compilado!<br>');
+                        for(var index in data.erros){
+                            $('body').append(data.erros[index]+'<br>');
+                        }
+                    },
+                    error:function(){
+                        $('body').append('erro ao compilar!<br>');
+                    },
+                    complete:function(){
+                        ocupado = false;
+                    }
+                });
+            }
+        },1000);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
