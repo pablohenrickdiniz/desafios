@@ -115,3 +115,6 @@
     padding-top:10px;
 }
 
+.modal-backdrop{
+    z-index:initial;
+}

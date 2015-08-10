@@ -11,9 +11,12 @@
     <script type="text/javascript" src="../../bower_components/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="../../bower_components/moment/min/moment-with-locales.min.js"></script>
     <script type="text/javascript" src="../../bower_components/react/react.js"></script>
+    <script type="text/javascript" src="js/dist/Mixins.min.js"></script>
+    <script type="text/javascript" src="js/dist/Alert.min.js"></script>
+    <script type="text/javascript" src="js/dist/Modal.min.js"></script>
+    <script type="text/javascript" src="js/dist/AlertModal.min.js"></script>
     <script type="text/javascript" src="js/dist/Matriz.min.js"></script>
     <script type="text/javascript" src="js/dist/MatrizCartao.min.js"></script>
-    <script type="text/javascript" src="js/dist/Mixins.min.js"></script>
     <script type="text/javascript" src="js/dist/AudioPlayer.min.js"></script>
     <script type="text/javascript" src="js/dist/Baralho.min.js"></script>
     <script type="text/javascript" src="js/dist/Cartao.min.js"></script>
@@ -23,6 +26,12 @@
 </head>
 <body>
     <div id="jogo-container" class="container">
+
+    </div>
+    <div id="opcoes-container">
+
+    </div>
+    <div id="completo-container">
 
     </div>
 </body>
