@@ -118,3 +118,8 @@
 .modal-backdrop{
     z-index:initial;
 }
+
+.slot{
+    transition-property: left,top;
+    transition-duration: 500ms,500ms;
+}

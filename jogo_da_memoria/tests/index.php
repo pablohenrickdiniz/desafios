@@ -1,4 +1,5 @@
 <!doctype html>
+<?php include('react_compiler.php')?>
 <html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
@@ -11,18 +12,18 @@
     <script type="text/javascript" src="../../bower_components/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="../../bower_components/moment/min/moment-with-locales.min.js"></script>
     <script type="text/javascript" src="../../bower_components/react/react.js"></script>
-    <script type="text/javascript" src="js/dist/Mixins.min.js"></script>
-    <script type="text/javascript" src="js/dist/Alert.min.js"></script>
-    <script type="text/javascript" src="js/dist/Modal.min.js"></script>
-    <script type="text/javascript" src="js/dist/AlertModal.min.js"></script>
-    <script type="text/javascript" src="js/dist/Matriz.min.js"></script>
-    <script type="text/javascript" src="js/dist/MatrizCartao.min.js"></script>
-    <script type="text/javascript" src="js/dist/AudioPlayer.min.js"></script>
-    <script type="text/javascript" src="js/dist/Baralho.min.js"></script>
-    <script type="text/javascript" src="js/dist/Cartao.min.js"></script>
-    <script type="text/javascript" src="js/dist/Functions.min.js"></script>
-    <script type="text/javascript" src="js/dist/Jogo.min.js"></script>
-    <script type="text/javascript" src="js/dist/Main.min.js"></script>
+    <script type="text/javascript" src="js/build/Mixins.js"></script>
+    <script type="text/javascript" src="js/build/Alert.js"></script>
+    <script type="text/javascript" src="js/build/Modal.js"></script>
+    <script type="text/javascript" src="js/build/AlertModal.js"></script>
+    <script type="text/javascript" src="js/build/Matriz.js"></script>
+    <script type="text/javascript" src="js/build/MatrizCartao.js"></script>
+    <script type="text/javascript" src="js/build/AudioPlayer.js"></script>
+    <script type="text/javascript" src="js/build/Baralho.js"></script>
+    <script type="text/javascript" src="js/build/Cartao.js"></script>
+    <script type="text/javascript" src="js/build/Functions.js"></script>
+    <script type="text/javascript" src="js/build/Jogo.js"></script>
+    <script type="text/javascript" src="js/build/Main.js"></script>
 </head>
 <body>
     <div id="jogo-container" class="container">

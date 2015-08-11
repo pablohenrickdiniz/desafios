@@ -14,7 +14,8 @@ var Cartao = React.createClass({
         top:React.PropTypes.number,
         index:React.PropTypes.array,
         virado:React.PropTypes.bool,
-        onClick:React.PropTypes.func
+        onClick:React.PropTypes.func,
+        ocupado:React.PropTypes.bool
     },
     getInitialState: function (){
         return {
@@ -31,33 +32,46 @@ var Cartao = React.createClass({
             top:0,
             index:[0,0],
             virado:false,
-            onClick:null
+            onClick:null,
+            ocupado:false
         };
     },
     render: function () {
         var style ={
             width:this.state.largura,
             height:this.state.altura,
-            left:this.state.largura*this.state.index[1],
-            top:this.state.altura*this.state.index[0]
+            left:this.state.left,
+            top:this.state.top
         };
         var className = this.state.virado?'cartao':'cartao back';
+        var imagem = "";
+        if(this.state.virado){
+            imagem = this.state.imagem;
+        }
 
         return (
             <div className="slot" style={style}>
                 <div className={className} onClick={this.click}>
-                    <img data-original={this.state.fundo} className="lazy back-image"/>
-                    <img data-original={this.state.imagem} className="lazy front-image"/>
+                    <img data-original={this.state.fundo} className="lazy back-image" ref="backImage"/>
+                    <img data-original={imagem} className="lazy front-image" ref="frontImage"/>
                     <span className="title">{this.state.titulo}</span>
                     <AudioPlayer src={this.state.som}/>
                 </div>
             </div>
         );
     },
+    componentDidMount:function(){
+        $(React.findDOMNode(this.refs.backImage)).lazyload();
+        $(React.findDOMNode(this.refs.frontImage)).lazyload();
+    },
+    componentDidUpdate:function(){
+        $(React.findDOMNode(this.refs.backImage)).lazyload();
+        $(React.findDOMNode(this.refs.frontImage)).lazyload();
+    },
     click:function(){
-        if(!this.state.bloqueado){
+        if(!this.state.bloqueado && !this.state.ocupado){
             if(_.isFunction(this.state.onClick)){
-                this.state.onClick(this);
+                this.state.onClick(this.state.index);
             }
         }
     }
