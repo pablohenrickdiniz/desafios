@@ -22,13 +22,13 @@ $(document).ready(function(){
 
     $("#novo-jogo").click(function(){
         React.render(
-            <Jogo pausar={true}/>,
+            <Jogo pausado={true}/>,
             document.getElementById('jogo-container')
         );
         React.render(
             <NovoJogo baralhos={baralhos} open={true} onClose={function(){
                 React.render(
-                    <Jogo pausar={false}/>,
+                    <Jogo pausado={false}/>,
                     document.getElementById('jogo-container')
                 );
             }}/>,
@@ -38,17 +38,23 @@ $(document).ready(function(){
 
     $("#opcoes").click(function(){
         React.render(
-            <Jogo pausar={true}/>,
+            <Jogo pausado={true}/>,
             document.getElementById('jogo-container')
         );
         React.render(
             <Opcoes open={true} onClose={function(){
                 React.render(
-                    <Jogo pausar={true}/>,
+                    <Jogo pausado={false}/>,
                     document.getElementById('jogo-container')
                 );
             }}/>,
             document.getElementById('opcoes-container')
         );
     });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 100);
 });

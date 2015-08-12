@@ -33,7 +33,8 @@ var Cartao = React.createClass({
             index:[0,0],
             virado:false,
             onClick:null,
-            ocupado:false
+            ocupado:false,
+            color:'white'
         };
     },
     render: function () {
@@ -54,15 +55,19 @@ var Cartao = React.createClass({
                 <div className={className} onClick={this.click}>
                     <img data-original={this.state.fundo} className="lazy back-image" ref="backImage"/>
                     <img data-original={imagem} className="lazy front-image" ref="frontImage"/>
-                    <span className="title">{this.state.titulo}</span>
+                    <span className="title" style={{color:this.state.color}}>{this.state.titulo}</span>
                     <AudioPlayer src={this.state.som}/>
                 </div>
             </div>
         );
     },
     componentDidMount:function(){
-        $(React.findDOMNode(this.refs.backImage)).lazyload();
-        $(React.findDOMNode(this.refs.frontImage)).lazyload();
+        $(React.findDOMNode(this.refs.backImage)).lazyload({
+            event : "sporty"
+        });
+        $(React.findDOMNode(this.refs.frontImage)).lazyload({
+            event : "sporty"
+        });
     },
     componentDidUpdate:function(){
         $(React.findDOMNode(this.refs.backImage)).lazyload();

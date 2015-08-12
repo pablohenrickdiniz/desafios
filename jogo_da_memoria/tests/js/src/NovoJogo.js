@@ -26,13 +26,12 @@ var NovoJogo = React.createClass({
         );
     },
     itemClick:function(index){
-        console.log(index);
         var item = this.state.baralhos[index];
         var url = item.url;
         var confirm = window.confirm('Tem certeza que deseja abandonar a partida atual e começar uma nova?');
         if(confirm){
             React.render(
-                <Jogo baralhoUrl={item.url} reiniciar={true}/>,
+                <Jogo baralhoUrl={item.url} novoJogo={true}/>,
                 document.getElementById('jogo-container')
             );
             this.setState({

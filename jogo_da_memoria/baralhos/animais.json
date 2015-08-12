@@ -1,8 +1,8 @@
 {
     "titulo": "Animais e seus gêneros",
     "fundo": "http://www.phydokz.xpg.com.br/baralhos/backgrounds/cheetah-card.gif",
-    "altura":"130",
-    "largura":"130",
+    "altura":130,
+    "largura":130,
     "fontColor":"black",
     "sons": {
         "viraCarta": "sons/cardSlide1.wav",

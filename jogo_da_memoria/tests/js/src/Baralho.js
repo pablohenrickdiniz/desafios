@@ -1,8 +1,8 @@
 function Baralho(options) {
     var self = this;
     self.titulo = options.titulo;
-    self.altura = options.altura;
-    self.largura = options.largura;
+    self.altura = parseInt(options.altura);
+    self.largura = parseInt(options.largura);
     self.cartoes = [];
     self.jogo = options.jogo;
     self.sons = options.sons;
@@ -12,7 +12,7 @@ function Baralho(options) {
             var cartao = cartoes[i];
             cartao.fundo= options.fundo;
             cartao.somViraCarta = options.sons.viraCarta;
-            cartao.fontColor = options.fontColor;
+            cartao.color = options.fontColor;
             cartao.instanceCount = 1;
             cartao.virado = false;
             cartao.bloqueado = false;
@@ -28,7 +28,7 @@ function Baralho(options) {
                     aux.fundo= options.fundo;
                     aux.somViraCarta = options.sons.viraCarta;
                     aux.par = cartao.id;
-                    aux.fontColor = options.fontColor;
+                    aux.color = options.fontColor;
                     aux.virado = false;
                     aux.bloqueado = false;
                     aux.instanceCount = 2;
@@ -44,6 +44,13 @@ function Baralho(options) {
         self.cartoes = self.cartoes.concat(novos);
     }
 }
+
+
+Baralho.prototype.getMaxDificuldade = function(){
+    var self = this;
+    var dificuldade_max_baralho = Math.ceil(Math.ceil(Math.sqrt(self.cartoes.length))/2);
+    return dificuldade_max_baralho;
+};
 
 Baralho.prototype.getPares = function () {
     var self = this;

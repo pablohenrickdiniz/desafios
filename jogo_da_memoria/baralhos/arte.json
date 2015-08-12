@@ -1,8 +1,8 @@
 {
     "titulo": "História da arte",
     "fundo": "http://www.phydokz.xpg.com.br/baralhos/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg",
-    "altura": "150",
-    "largura": "100",
+    "altura": 150,
+    "largura": 100,
     "fontColor":"white",
     "sons": {
         "viraCarta": "sons/cardSlide1.wav",

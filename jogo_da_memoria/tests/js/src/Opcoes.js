@@ -37,7 +37,7 @@ var Opcoes = React.createClass({
             open:false
         },function(){
             React.render(
-                <Jogo dificuldade={self.state.dificuldade} reiniciar={true}/>,
+                <Jogo dificuldade={self.state.dificuldade} mudarDificuldade={true}/>,
                 document.getElementById('jogo-container')
             );
         });
