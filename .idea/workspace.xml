@@ -1,257 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67b6fc12-7072-40d8-b47e-202ff8fa3c36" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/012f3de47c861908cc5cac8cc9569f735f44c152.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/012f3de47c861908cc5cac8cc9569f735f44c152.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/020c330b987e32c2854f6a747bcd1b33a15bcfd4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/020c330b987e32c2854f6a747bcd1b33a15bcfd4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/0611ba5f38b823fa0e006c2f6af08075c55decfd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/0611ba5f38b823fa0e006c2f6af08075c55decfd.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/08ae964a6389d34cbcccd2e4e6f6c512c3c01fa3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/08ae964a6389d34cbcccd2e4e6f6c512c3c01fa3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/0c3e44ea72457dfe395b4c495605e2d184823a05.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/0c3e44ea72457dfe395b4c495605e2d184823a05.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/0fe72c602e0f8003ce2551b45db8dd9a34b8395b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/0fe72c602e0f8003ce2551b45db8dd9a34b8395b.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/10fae2fe441f327985bfafbb7e3c356f9c126e03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/10fae2fe441f327985bfafbb7e3c356f9c126e03.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/1207d869318b430f60d835008d40b46275a3c101.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/1207d869318b430f60d835008d40b46275a3c101.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/13eb90910a52cfc8ac55792a51244cbd029d661b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/13eb90910a52cfc8ac55792a51244cbd029d661b.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/165103f9fc8adfb6ea9ad40d2967e3b0143c06be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/165103f9fc8adfb6ea9ad40d2967e3b0143c06be.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/16f7393269c2d8e7a1a3877f5e9a072ddc5e838a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/16f7393269c2d8e7a1a3877f5e9a072ddc5e838a.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/1767ce24ef4f3efb75950d290a94f4388c7c8046.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/1767ce24ef4f3efb75950d290a94f4388c7c8046.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/1904a79fad46d96740ea91cfd9e97e87c48aec56.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/1904a79fad46d96740ea91cfd9e97e87c48aec56.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/1bee2a8d5cc9ec345b4f48226c763abfb62b14c6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/1bee2a8d5cc9ec345b4f48226c763abfb62b14c6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/2112c51220d1d9e832b22e701360f7925e32c0b2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/2112c51220d1d9e832b22e701360f7925e32c0b2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/217dcd33b71bdd6c8c52e6f504b71cdc4d930df3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/217dcd33b71bdd6c8c52e6f504b71cdc4d930df3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/240213207aa0160ce4cf6eaee105df444eec18e4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/240213207aa0160ce4cf6eaee105df444eec18e4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/28cc34007c2fd03dd4304436ddbc410f168a42f4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/28cc34007c2fd03dd4304436ddbc410f168a42f4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/29a0108b1ca8ef768fdfa6641d0822b288f2ebb5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/29a0108b1ca8ef768fdfa6641d0822b288f2ebb5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/328531bf2bcf8ea60bfcb05495d40aba7874f216.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/328531bf2bcf8ea60bfcb05495d40aba7874f216.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/32936fe513ed422ccd42ffc884034da693121aa8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/32936fe513ed422ccd42ffc884034da693121aa8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/33b6c9662bcfd4c4dc3490ee2f774cfe6d72fc9f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/33b6c9662bcfd4c4dc3490ee2f774cfe6d72fc9f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/370b527cf6a22aef9da409ddf96d9d9aa023d74b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/370b527cf6a22aef9da409ddf96d9d9aa023d74b.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/38fb4bd12c2a8ce5b9d7f5fe8c9725e730b598ac.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/38fb4bd12c2a8ce5b9d7f5fe8c9725e730b598ac.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/3915b1dccf57a83ad9f9d1bba7982a86609c2d70.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/3915b1dccf57a83ad9f9d1bba7982a86609c2d70.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/3a0f9cb9077536d69a640ea44ae9a82b81290fca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/3a0f9cb9077536d69a640ea44ae9a82b81290fca.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/3a17eb13883b30e07559071f919b73cd1354af72.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/3a17eb13883b30e07559071f919b73cd1354af72.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/3aeef8aec34b796b41161dedf9d70fe59bb94a71.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/3aeef8aec34b796b41161dedf9d70fe59bb94a71.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/4339f315b51daebe4c6fb4085cc298c731429a95.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/4339f315b51daebe4c6fb4085cc298c731429a95.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/459c4559325aeefaf15082bd218ec2ee368b1de0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/459c4559325aeefaf15082bd218ec2ee368b1de0.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/47f23121d226d3de6384d070a4a90db72b07cd98.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/47f23121d226d3de6384d070a4a90db72b07cd98.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/492bd465ac4c7e8cec7e269b824c4ffb927cb0d1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/492bd465ac4c7e8cec7e269b824c4ffb927cb0d1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/4eacc669e48982212f6229ba00fe6c2621d56fe2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/4eacc669e48982212f6229ba00fe6c2621d56fe2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/4fa9b19253b3a26c6c4a507e08c1a917a63cc7b0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/4fa9b19253b3a26c6c4a507e08c1a917a63cc7b0.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/51bdb662977e1340ead0c2584b199ca43b3b8f80.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/51bdb662977e1340ead0c2584b199ca43b3b8f80.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/530bf0d587173350ff459e7a339fccaacfd5d924.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/530bf0d587173350ff459e7a339fccaacfd5d924.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/566fde30e3ba342226aa369589b87f978da37281.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/566fde30e3ba342226aa369589b87f978da37281.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/56b69501ec9c67f18e9990e8aa895c8c89a12e8f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/56b69501ec9c67f18e9990e8aa895c8c89a12e8f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/5df63caccde06d717bfc37b27c9c3897c71a3274.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/5df63caccde06d717bfc37b27c9c3897c71a3274.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/5ee2b5f30586fb0e4fad41d5d58f63afd61ba001.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/5ee2b5f30586fb0e4fad41d5d58f63afd61ba001.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/64cd3c1545bafb9498a836f626970773cb579a0c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/64cd3c1545bafb9498a836f626970773cb579a0c.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/6b3e5be87b52003ff4fadee0b344d805f9eb3436.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/6b3e5be87b52003ff4fadee0b344d805f9eb3436.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/714e323a96def915f2283b299325547c4e1cd3bc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/714e323a96def915f2283b299325547c4e1cd3bc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/72093dde5025ee82e1e0f439ce8baa0b522e06bd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/72093dde5025ee82e1e0f439ce8baa0b522e06bd.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/72686ccd14d1fa271530a5c896146a1a64007240.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/72686ccd14d1fa271530a5c896146a1a64007240.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/72c2a8f9c075b93cce402c4a15a80f6cb22493e8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/72c2a8f9c075b93cce402c4a15a80f6cb22493e8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/73507279127bd41d488f8af236b0d49bed6ff4d8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/73507279127bd41d488f8af236b0d49bed6ff4d8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/760eb8128d9bd6c9b7c58da7b298cfa476bf6d40.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/760eb8128d9bd6c9b7c58da7b298cfa476bf6d40.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/7663888d74f1541e8c8cb0a6e28719fd8e791a7e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/7663888d74f1541e8c8cb0a6e28719fd8e791a7e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/7901c1c01605ab319881e654c14759e0351e9669.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/7901c1c01605ab319881e654c14759e0351e9669.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/7b5ac4a94a9b3a055e45aee77fd474203699f9d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/7b5ac4a94a9b3a055e45aee77fd474203699f9d3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/7d2963703a8bc264101f0a11a0993f0556413146.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/7d2963703a8bc264101f0a11a0993f0556413146.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/7e3b7a75417e5205395c6b05b7cd1093fcbf63b4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/7e3b7a75417e5205395c6b05b7cd1093fcbf63b4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/800d7161995f881e9300f761653c2f1a531aed42.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/800d7161995f881e9300f761653c2f1a531aed42.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/81adc81080e0f14fa5c2dd37ebcaff5aae433a21.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/81adc81080e0f14fa5c2dd37ebcaff5aae433a21.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/82cab070cea8681a912300c2c1614e21a7eb1187.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/82cab070cea8681a912300c2c1614e21a7eb1187.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/8e198677855ca2a9854ada84318e4d7bcc5e793e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/8e198677855ca2a9854ada84318e4d7bcc5e793e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/905b9d2e1f09ee45a7bc4f4c52eb9ecbf39fa9d5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/905b9d2e1f09ee45a7bc4f4c52eb9ecbf39fa9d5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/92445bd9aa6c247bc71db3409a7f5ac9a646583e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/92445bd9aa6c247bc71db3409a7f5ac9a646583e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/93125aa763a78f3d56d52357a0889eee5010cbf6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/93125aa763a78f3d56d52357a0889eee5010cbf6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/957e58f697669d6fb5c3ee7d23f665c5556be11a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/957e58f697669d6fb5c3ee7d23f665c5556be11a.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/95fe04159f40e85c2e38d3691c33a188f983b7e0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/95fe04159f40e85c2e38d3691c33a188f983b7e0.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/96bb97c43aa2057c445ecca102b845d915c9cd8e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/96bb97c43aa2057c445ecca102b845d915c9cd8e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/9830c8f1a90eee67d15f8c08ab47840237c8c5c7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/9830c8f1a90eee67d15f8c08ab47840237c8c5c7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/99a8fd64a8c1cc2d9b7dbe3fb9e5871f9161c141.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/99a8fd64a8c1cc2d9b7dbe3fb9e5871f9161c141.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/9f8c65b53c40854726404a354dc82255d5471267.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/9f8c65b53c40854726404a354dc82255d5471267.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/9fec9382d5269193056f7ba7bf2249e50039b209.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/9fec9382d5269193056f7ba7bf2249e50039b209.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AlertModal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AudioPlayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Baralho.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Cartao.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Jogo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Matriz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/MatrizCartao.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Mixins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/a3a6d1e17fc6117093c53f3a08862d2e8e5fc76c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/a3a6d1e17fc6117093c53f3a08862d2e8e5fc76c.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/a7ab01aad681768c77e9122f7dad7c5c07ec0ff8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/a7ab01aad681768c77e9122f7dad7c5c07ec0ff8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/a9f70043b9f2b2ca4d7cced8d7aac853ff493c0a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/a9f70043b9f2b2ca4d7cced8d7aac853ff493c0a.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/b1c870e9ab52dca6eef2a48bce64a09b07e234f9.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/b1c870e9ab52dca6eef2a48bce64a09b07e234f9.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/b2a4d2f614f4c933a7a5b78d8bdabaabe057e069.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/b2a4d2f614f4c933a7a5b78d8bdabaabe057e069.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/b3684a4732153f61b6ff51524f58af0cf53bcc54.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/b3684a4732153f61b6ff51524f58af0cf53bcc54.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/b9f5cb87befd6bb168d41db677070616b2e20272.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/b9f5cb87befd6bb168d41db677070616b2e20272.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/bad3a6bbc65995a05efa33d12d4a51b1dbe70a80.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/bad3a6bbc65995a05efa33d12d4a51b1dbe70a80.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c190516b12661043bb73f62ea7d2fae324905b1f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c190516b12661043bb73f62ea7d2fae324905b1f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c1ce34f5c4a8f7d45e7a7863b7baa1870e44d255.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c1ce34f5c4a8f7d45e7a7863b7baa1870e44d255.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c3fcd1a3e68c82450978ff782cc2f6e5cd5c6eee.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c3fcd1a3e68c82450978ff782cc2f6e5cd5c6eee.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c62baf486a589452a2ac249cf681984d98cb4d16.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c62baf486a589452a2ac249cf681984d98cb4d16.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c80d98deaa9f08a62097497ccd95a4008938be14.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c80d98deaa9f08a62097497ccd95a4008938be14.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/c968302bb3ed19adfe92a57b668b404e5f968519.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/c968302bb3ed19adfe92a57b668b404e5f968519.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/cc16540d735b3d57830a97d7c59901a90199269d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/cc16540d735b3d57830a97d7c59901a90199269d.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/cc3c5e6e5172ed5dc4cd20b52ef4049367786e77.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/cc3c5e6e5172ed5dc4cd20b52ef4049367786e77.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/ce47eb0370177730e0a2e24eba9dfe4332242ded.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/ce47eb0370177730e0a2e24eba9dfe4332242ded.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/cf71f3e2e6f237b19a54f0451e4dba353cb4ee88.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/cf71f3e2e6f237b19a54f0451e4dba353cb4ee88.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d03c645e29939015ff33131406de150e018b2b03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d03c645e29939015ff33131406de150e018b2b03.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d0b54f00a1c3c0cbe11e8c1e8c2bbae3e36f90df.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d0b54f00a1c3c0cbe11e8c1e8c2bbae3e36f90df.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d353f856f10790bf5e0a83a34f6af6fc0fc85c3c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d353f856f10790bf5e0a83a34f6af6fc0fc85c3c.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d64cdf9339c6b587d30484e6a089e55362df8e76.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d64cdf9339c6b587d30484e6a089e55362df8e76.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d7f89d76b5047a00402d4f62fc524a2ad8ea8052.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d7f89d76b5047a00402d4f62fc524a2ad8ea8052.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d838de788313fa81ea627096b53d566148c86880.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d838de788313fa81ea627096b53d566148c86880.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/d9284d7fae18c903ddc5c0f543091a50a7317700.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/d9284d7fae18c903ddc5c0f543091a50a7317700.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/db69755565e8fc4bbf40c92a3ff74d470e052c55.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/db69755565e8fc4bbf40c92a3ff74d470e052c55.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/dc9804f4876e3078e7cd0d41a937a379b228860c.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/dc9804f4876e3078e7cd0d41a937a379b228860c.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/dd9875e86747827c812fa0ee7bd955a881d9b283.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/dd9875e86747827c812fa0ee7bd955a881d9b283.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/desafios.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/e00e72d104c4e7d54d3bc3516bac9722f63f40ac.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/e00e72d104c4e7d54d3bc3516bac9722f63f40ac.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/e1a7b0291ce89ef59841383e0a64f383ba7a43fb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/e1a7b0291ce89ef59841383e0a64f383ba7a43fb.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/e2790b68271b6d34eea9ee4b5748990cdb791660.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/e2790b68271b6d34eea9ee4b5748990cdb791660.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/ea861ed466898033e9ae07bbf51c0002fcf4e74f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/ea861ed466898033e9ae07bbf51c0002fcf4e74f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/ecc5c006ab7491ba3a0bbb50c057750fc15f6515.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/ecc5c006ab7491ba3a0bbb50c057750fc15f6515.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/ecfe1eb264accddec292ca438dd3025722644050.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/ecfe1eb264accddec292ca438dd3025722644050.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/efa026ba3f285d52ec65bc7d59006f2b9a49a01f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/efa026ba3f285d52ec65bc7d59006f2b9a49a01f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/f365ee64ce7020120cb9d6196e42d2095d1af1f6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/f365ee64ce7020120cb9d6196e42d2095d1af1f6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/f36f6b72c7e1f5bb1e244cac61aa36c39e27164a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/f36f6b72c7e1f5bb1e244cac61aa36c39e27164a.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/f4aa2f129c2315e3f93b3080778ceab6ee9799cf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/f4aa2f129c2315e3f93b3080778ceab6ee9799cf.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/f5e3d3da5171c1e687388084302d1a1e30e88414.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/f5e3d3da5171c1e687388084302d1a1e30e88414.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/f72a9b99ae2e9a306df42ebeb4952d724477bf74.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/f72a9b99ae2e9a306df42ebeb4952d724477bf74.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/fb195a8889c8f6a0c4bd971fd189ca4a855b4321.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/fb195a8889c8f6a0c4bd971fd189ca4a855b4321.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/fbd4b645b48c0698d11f680bcd09a09af345f45a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/fbd4b645b48c0698d11f680bcd09a09af345f45a.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/fc2e8625f001c57384bb96179eaaf3f5d170aa27.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/.module-cache/manifest/fc2e8625f001c57384bb96179eaaf3f5d170aa27.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="67b6fc12-7072-40d8-b47e-202ff8fa3c36" name="Default" comment="react tests">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\020c330b987e32c2854f6a747bcd1b33a15bcfd4.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\1a26e40567442f8a4da841179efbb7ba4261f96e.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\2ca984aa8459989a223b233dd8fe362fe196d49c.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\32da9d30d1d7138407d168d0a7d68f4eedf6a240.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\459c4559325aeefaf15082bd218ec2ee368b1de0.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\714e323a96def915f2283b299325547c4e1cd3bc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\760eb8128d9bd6c9b7c58da7b298cfa476bf6d40.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\905b9d2e1f09ee45a7bc4f4c52eb9ecbf39fa9d5.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\957e58f697669d6fb5c3ee7d23f665c5556be11a.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\a163d0bdf22463cb3e1582688751dc0e1a255e74.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\d03c645e29939015ff33131406de150e018b2b03.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\d838de788313fa81ea627096b53d566148c86880.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\ecfe1eb264accddec292ca438dd3025722644050.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\fcc917a13de3f63f6b719e179332d3452d012448.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\020c330b987e32c2854f6a747bcd1b33a15bcfd4.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\1a26e40567442f8a4da841179efbb7ba4261f96e.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\2ca984aa8459989a223b233dd8fe362fe196d49c.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\32da9d30d1d7138407d168d0a7d68f4eedf6a240.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\459c4559325aeefaf15082bd218ec2ee368b1de0.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\714e323a96def915f2283b299325547c4e1cd3bc.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\760eb8128d9bd6c9b7c58da7b298cfa476bf6d40.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\905b9d2e1f09ee45a7bc4f4c52eb9ecbf39fa9d5.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\957e58f697669d6fb5c3ee7d23f665c5556be11a.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\a163d0bdf22463cb3e1582688751dc0e1a255e74.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\d03c645e29939015ff33131406de150e018b2b03.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\d838de788313fa81ea627096b53d566148c86880.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\ecfe1eb264accddec292ca438dd3025722644050.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\.module-cache\manifest\fcc917a13de3f63f6b719e179332d3452d012448.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Alert.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\AlertModal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\AudioPlayer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Baralho.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Cartao.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Functions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Jogo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Matriz.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\MatrizCartao.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Mixins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Modal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\NovoJogo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\build\Opcoes.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="af6b19e9-56c5-4df6-bdf2-2612fe27e2d5" name="Failed commit: Default" comment="react tests">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AlertModal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AudioPlayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Mixins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js" />
-    </list>
+    <list id="af6b19e9-56c5-4df6-bdf2-2612fe27e2d5" name="Failed commit: Default" comment="react tests" />
     <ignored path="desafios.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -275,11 +70,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="memoria.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/css/memoria.css">
+      <file leaf-file-name="Opcoes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Opcoes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28870293" vertical-offset="1255" max-vertical-offset="2227">
-              <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1972">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jogo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07249467" vertical-offset="476" max-vertical-offset="5423">
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.0769231" vertical-offset="363" max-vertical-offset="1632">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1020">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -298,13 +133,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jogo_da_memoria/css/patterns.css" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/js/Object.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/AudioPlayer.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/keys.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/Matriz.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/Baralho.js" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/index.html" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/main.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/Cartao.js" />
         <option value="$USER_HOME$/Downloads/compiler-latest/test.js" />
@@ -332,7 +164,6 @@
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/matriz.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/dist/functions.min.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Functions.js" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/dist/Main.min.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/dist/Matriz.min.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/MatrizCartao.js" />
@@ -342,13 +173,17 @@
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Mixins.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/js/Jogo.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Alert.js" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/index.php" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AlertModal.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Cartao.js" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/index.html" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/css/memoria.css" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/NovoJogo.js" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/index.php" />
+        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Opcoes.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Cartao.js" />
-        <option value="$PROJECT_DIR$/jogo_da_memoria/css/memoria.css" />
       </list>
     </option>
   </component>
@@ -385,6 +220,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -553,7 +389,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,15 +432,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -746,24 +581,24 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31543624" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31543624" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19601542" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19858612" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -808,6 +643,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/css/memoria.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/draenei-card-back-january-season10.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -869,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33612272" vertical-offset="388" max-vertical-offset="1105">
           <caret line="37" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,14 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="813" max-vertical-offset="1530">
           <caret line="56" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/js/Cartao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -917,18 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1292">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AudioPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,21 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.153846" vertical-offset="733" max-vertical-offset="1870">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/dist/AlertModal.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -989,19 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1268" max-vertical-offset="1972">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Alert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14225942" vertical-offset="0" max-vertical-offset="717">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21757323" vertical-offset="201" max-vertical-offset="918">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,6 +826,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="1258">
           <caret line="6" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1632">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.461538" vertical-offset="835" max-vertical-offset="1870">
+          <caret line="85" column="10" selection-start-line="43" selection-start-column="4" selection-end-line="85" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1037,34 +853,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/css/memoria.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2261">
+          <caret line="123" column="60" selection-start-line="123" selection-start-column="60" selection-end-line="123" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/js/Cartao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1632">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42307693" vertical-offset="57" max-vertical-offset="748">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="5151">
-          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1077,106 +877,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Alert.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1360">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AudioPlayer.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/NovoJogo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Baralho.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="1972">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Cartao.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Opcoes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="850">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Functions.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.0769231" vertical-offset="363" max-vertical-offset="1632">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Jogo.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5151">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1020">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Main.js">
+    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Matriz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/MatrizCartao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Mixins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1268" max-vertical-offset="1972">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AlertModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18549512" vertical-offset="133" max-vertical-offset="850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/css/memoria.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28870293" vertical-offset="1255" max-vertical-offset="2227">
-          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.07249467" vertical-offset="476" max-vertical-offset="5423">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
