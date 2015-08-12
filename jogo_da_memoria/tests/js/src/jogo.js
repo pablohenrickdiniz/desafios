@@ -24,8 +24,23 @@ var Jogo = React.createClass({
             matriz: new MatrizCartao(2, 2),
             pausado: false,
             cartoesVirados: 0,
-            totalCartoes: 0
+            totalCartoes: 0,
+            reiniciar: false,
+            pausar:false
         };
+    },
+    componentDidUpdate: function () {
+        if (this.state.reiniciar) {
+            this.clearIntervals();
+            this.setState({
+                reiniciar: false,
+                tempo:moment('0000-01-01 00:00:00')
+            }, function () {
+                this.carregarBaralho(function () {
+                    this.iniciar();
+                });
+            });
+        }
     },
     carregarBaralho: function (callback) {
         var self = this;
@@ -34,10 +49,11 @@ var Jogo = React.createClass({
             type: 'post',
             dataType: 'json',
             success: function (options) {
-                self.updateState({
+                self.setState({
                     baralho: new Baralho(options)
+                },function(){
+                    callback.apply(self);
                 });
-                callback.apply(self);
             },
             error: function () {
                 console.error('Verifique se a resposta está no formato json');
@@ -61,7 +77,7 @@ var Jogo = React.createClass({
     pausar: function () {
         this.clearIntervals();
         this.updateState({
-            pausado:true
+            pausado: true
         });
     },
     componentDidMount: function () {
@@ -112,9 +128,9 @@ var Jogo = React.createClass({
                 var key = index[0] + '-' + index[1];
                 var left = 0;
                 var top = 1;
-                if(cartao.left == undefined && cartao.top == undefined){
-                    cartao.left = largura*index[1];
-                    cartao.top  = altura*index[0];
+                if (cartao.left == undefined && cartao.top == undefined) {
+                    cartao.left = largura * index[1];
+                    cartao.top = altura * index[0];
                 }
 
                 cartoes.push(<Cartao {...cartao} key={key} index={index} altura={altura} largura={largura} onClick={self.selecionarCartao} ocupado={self.state.ocupado}/>);
@@ -148,7 +164,7 @@ var Jogo = React.createClass({
                 matriz: matriz
             });
         }, function () {
-            setTimeout(function(){
+            setTimeout(function () {
                 var matriz = self.state.matriz;
                 matriz.recursiveFor(0, 0, function (cartao, index, matriz) {
                     var rand_i = Math.floor(Math.random() * matriz.rows);
@@ -180,17 +196,17 @@ var Jogo = React.createClass({
                     });
                     self.setState({
                         matriz: matriz,
-                        tempo:moment('0000-01-01 00:00:00'),
-                        cartao:null,
-                        cartoesVirados:0,
-                        ocupado:false
-                    },function(){
-                        setTimeout(function(){
+                        tempo: moment('0000-01-01 00:00:00'),
+                        cartao: null,
+                        cartoesVirados: 0,
+                        ocupado: false
+                    }, function () {
+                        setTimeout(function () {
                             self.continuar();
-                        },200);
+                        }, 200);
                     });
                 }, 200);
-            },600);
+            }, 600);
         }, 200);
     },
     continuar: function () {
@@ -211,52 +227,52 @@ var Jogo = React.createClass({
     isCompleto: function () {
         var self = this;
         var count = 0;
-        self.state.matriz.forEach(function(cartao){
-            if(cartao instanceof  Object){
-                count += cartao.bloqueado?1:0;
+        self.state.matriz.forEach(function (cartao) {
+            if (cartao instanceof  Object) {
+                count += cartao.bloqueado ? 1 : 0;
             }
         });
         return count == self.state.totalCartoes;
     },
     selecionarCartao: function (index) {
         var self = this;
-        if(!self.state.ocupado){
+        if (!self.state.ocupado && !self.state.pausado) {
             self.setState({
-                ocupado:true
-            },function(){
+                ocupado: true
+            }, function () {
                 var matriz = self.state.matriz;
-                var cartao = matriz.get(index[0],index[1]);
-                if(self.state.cartao == null){
+                var cartao = matriz.get(index[0], index[1]);
+                if (self.state.cartao == null) {
                     console.log('primero passo');
                     cartao.bloqueado = true;
                     cartao.virado = true;
                     self.updateState({
-                        cartao:cartao,
-                        matriz:matriz,
-                        ocupado:false
+                        cartao: cartao,
+                        matriz: matriz,
+                        ocupado: false
                     });
                 }
-                else if(self.state.cartao != cartao){
+                else if (self.state.cartao != cartao) {
                     cartao.virado = true;
-                    var callback = function(){
-                        setTimeout(function(){
-                            if(self.state.cartao.par == cartao.id || cartao.par == self.state.cartao.id){
+                    var callback = function () {
+                        setTimeout(function () {
+                            if (self.state.cartao.par == cartao.id || cartao.par == self.state.cartao.id) {
                                 cartao.bloqueado = true;
                                 self.setState({
-                                    cartao:null,
-                                    matriz:matriz
-                                },function(){
-                                    self.setState({ocupado:false});
-                                    if(self.isCompleto()){
+                                    cartao: null,
+                                    matriz: matriz
+                                }, function () {
+                                    self.setState({ocupado: false});
+                                    if (self.isCompleto()) {
                                         self.pausar();
                                         var props = {
-                                            id:'alert-modal',
-                                            open:true,
-                                            message:<span className="jogo-info">Tempo: {self.state.tempo.format('HH:mm:ss')}</span>,
-                                            size:'modal-sm',
-                                            type:'info',
-                                            title:'Jogo Completo!',
-                                            onClose:self.reiniciar
+                                            id: 'alert-modal',
+                                            open: true,
+                                            message: <span className="jogo-info">Tempo: {self.state.tempo.format('HH:mm:ss')}</span>,
+                                            size: 'modal-sm',
+                                            type: 'info',
+                                            title: 'Jogo Completo!',
+                                            onClose: self.reiniciar
                                         };
                                         React.render(
                                             <AlertModal {...props}/>,
@@ -265,32 +281,32 @@ var Jogo = React.createClass({
                                     }
                                 });
                             }
-                            else{
+                            else {
                                 self.state.cartao.virado = false;
                                 self.setState({
-                                    matriz:matriz
+                                    matriz: matriz
                                 });
-                                setTimeout(function(){
+                                setTimeout(function () {
                                     cartao.virado = false;
                                     cartao.bloqueado = false;
                                     self.state.cartao.bloqueado = false;
                                     self.setState({
-                                        matriz:matriz,
-                                        cartao:null,
-                                        ocupado:false
+                                        matriz: matriz,
+                                        cartao: null,
+                                        ocupado: false
                                     });
-                                },200);
+                                }, 200);
                             }
-                        },1000);
+                        }, 1000);
                     };
 
                     self.setState({
-                        matriz:matriz
-                    },callback);
+                        matriz: matriz
+                    }, callback);
                 }
-                else{
+                else {
                     console.log('mesmo cartao!');
-                    self.setState({ocupado:false});
+                    self.setState({ocupado: false});
                 }
             });
         }

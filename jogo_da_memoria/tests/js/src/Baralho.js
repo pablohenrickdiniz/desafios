@@ -14,6 +14,8 @@ function Baralho(options) {
             cartao.somViraCarta = options.sons.viraCarta;
             cartao.fontColor = options.fontColor;
             cartao.instanceCount = 1;
+            cartao.virado = false;
+            cartao.bloqueado = false;
             self.cartoes.push(cartao);
         }
 
@@ -27,6 +29,8 @@ function Baralho(options) {
                     aux.somViraCarta = options.sons.viraCarta;
                     aux.par = cartao.id;
                     aux.fontColor = options.fontColor;
+                    aux.virado = false;
+                    aux.bloqueado = false;
                     aux.instanceCount = 2;
                     novos.push(aux);
                 }

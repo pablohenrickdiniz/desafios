@@ -120,6 +120,8 @@
 }
 
 .slot{
-    transition-property: left,top;
-    transition-duration: 500ms,500ms;
+    transition-property: left,top,width,height,background,opacity;
+    transition-duration: 500ms,500ms,200ms,200ms,200ms,200ms;
 }
+
+
