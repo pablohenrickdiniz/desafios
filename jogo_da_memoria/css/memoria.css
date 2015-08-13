@@ -59,7 +59,6 @@
 
 .cartao .front-image{
     visibility: visible;
-    z-index:2;
 }
 
 .cartao.back .front-image{
@@ -68,7 +67,6 @@
 
 .cartao.back .back-image{
     visibility: visible;
-    z-index:2;
 }
 
 .cartao .back-image{
@@ -122,6 +120,13 @@
 .slot{
     transition-property: left,top,width,height,background,opacity;
     transition-duration: 500ms,500ms,200ms,200ms,200ms,200ms;
+}
+
+img[src=""]{
+    background-image:url('../img/backgrounds/loading.gif');
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 

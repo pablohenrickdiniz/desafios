@@ -43,7 +43,8 @@ var Jogo = React.createClass({
         self.setState({
             tempo: moment('0000-01-01 00:00:00'),
             pausado:false,
-            tentativas:0
+            tentativas:0,
+            cartoesVirados:0
         });
         this.setInterval('tick', function () {
             if(!self.state.pausado){
@@ -75,6 +76,11 @@ var Jogo = React.createClass({
                 this.carregarBaralho(function () {
                     this.iniciar();
                 });
+            });
+        }
+        if(self.state.playAudio){
+            self.setState({
+                playAudio:false
             });
         }
     },
@@ -146,7 +152,6 @@ var Jogo = React.createClass({
                 <div className="row">
                     <div className="col-md-12">
                         <span className="jogo-info">Tempo: {this.state.tempo.format('HH:mm:ss')}</span>
-                        <AudioPlayer name="audio"/>
                     </div>
                 </div>
             </div>
@@ -213,13 +218,7 @@ var Jogo = React.createClass({
     },
     isCompleto: function () {
         var self = this;
-        var count = 0;
-        self.state.matriz.forEach(function (cartao) {
-            if (cartao instanceof  Object) {
-                count += cartao.bloqueado ? 1 : 0;
-            }
-        });
-        return count == self.state.totalCartoes;
+        return self.state.cartoesVirados == self.state.totalCartoes;
     },
     selecionarCartao: function (index) {
         var self = this;
@@ -233,6 +232,8 @@ var Jogo = React.createClass({
                     console.log('primero passo');
                     cartao.bloqueado = true;
                     cartao.virado = true;
+                    cartao.hideImage = false;
+                    _Audio.getChannel('a').play(self.state.baralho.sons.viraCarta);
                     self.updateState({
                         cartao: cartao,
                         matriz: matriz,
@@ -240,14 +241,18 @@ var Jogo = React.createClass({
                     });
                 }
                 else if (self.state.cartao != cartao) {
+                    _Audio.getChannel('b').play(self.state.baralho.sons.viraCarta);
                     cartao.virado = true;
+                    cartao.hideImage = false;
                     var callback = function () {
                         setTimeout(function () {
                             if (self.state.cartao.par == cartao.id || cartao.par == self.state.cartao.id) {
                                 cartao.bloqueado = true;
+                                _Audio.getChannel('par').play(self.state.baralho.sons.parEncontrado);
                                 self.setState({
                                     cartao: null,
-                                    matriz: matriz
+                                    matriz: matriz,
+                                    cartoesVirados:self.state.cartoesVirados+2
                                 }, function () {
                                     self.setState({ocupado: false});
                                     if (self.isCompleto()) {
@@ -283,14 +288,25 @@ var Jogo = React.createClass({
                                 self.setState({
                                     matriz: matriz
                                 });
+                                _Audio.getChannel('c').play(self.state.baralho.sons.viraCarta);
                                 setTimeout(function () {
                                     cartao.virado = false;
                                     cartao.bloqueado = false;
-                                    self.state.cartao.bloqueado = false;
+                                    var aux = self.state.cartao;
+                                    aux.bloqueado = false;
+                                    _Audio.getChannel('d').play(self.state.baralho.sons.viraCarta);
                                     self.setState({
                                         matriz: matriz,
                                         cartao: null,
                                         ocupado: false
+                                    },function(){
+                                        setTimeout(function(){
+                                            aux.hideImage = true;
+                                            cartao.hideImage = true;
+                                            self.setState({
+                                                matriz:matriz
+                                            });
+                                        },250);
                                     });
                                 }, 200);
                             }

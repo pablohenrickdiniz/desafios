@@ -11,7 +11,6 @@ function Baralho(options) {
         for (var i = 0; i < cartoes.length; i++){
             var cartao = cartoes[i];
             cartao.fundo= options.fundo;
-            cartao.somViraCarta = options.sons.viraCarta;
             cartao.color = options.fontColor;
             cartao.instanceCount = 1;
             cartao.virado = false;

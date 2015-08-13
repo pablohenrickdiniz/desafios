@@ -9,7 +9,6 @@ var Cartao = React.createClass({
         fundo:React.PropTypes.string,
         altura:React.PropTypes.number,
         largura:React.PropTypes.number,
-        som:React.PropTypes.string,
         left:React.PropTypes.number,
         top:React.PropTypes.number,
         index:React.PropTypes.array,
@@ -27,14 +26,14 @@ var Cartao = React.createClass({
             fundo:'',
             altura:100,
             largura:100,
-            som:'',
             left:0,
             top:0,
             index:[0,0],
             virado:false,
             onClick:null,
             ocupado:false,
-            color:'white'
+            color:'white',
+            hideImage:true
         };
     },
     render: function () {
@@ -46,27 +45,26 @@ var Cartao = React.createClass({
         };
         var className = this.state.virado?'cartao':'cartao back';
         var imagem = "";
-        if(this.state.virado){
+        if(!this.state.hideImage){
             imagem = this.state.imagem;
         }
 
         return (
             <div className="slot" style={style}>
                 <div className={className} onClick={this.click}>
-                    <img src={this.state.fundo} className="lazy back-image" ref="backImage"/>
-                    <img src={imagem} className="lazy front-image" ref="frontImage"/>
+                    <img data-original={imagem} className="lazy front-image" ref="frontImage" src=""/>
+                    <img data-original={this.state.fundo} className="lazy back-image" ref="backImage" src=""/>
                     <span className="title" style={{color:this.state.color}}>{this.state.titulo}</span>
-                    <AudioPlayer src={this.state.som}/>
                 </div>
             </div>
         );
     },
     componentDidMount:function(){
         $(React.findDOMNode(this.refs.backImage)).lazyload({
-            event : "sporty"
+            effect:"fadeIn"
         });
         $(React.findDOMNode(this.refs.frontImage)).lazyload({
-            event : "sporty"
+            effect:"fadeIn"
         });
     },
     componentDidUpdate:function(){

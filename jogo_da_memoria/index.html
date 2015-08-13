@@ -2,102 +2,88 @@
 <html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
-    <title>Jogo da Memória</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/memoria.css"/>
-    <link rel="stylesheet" href="css/patterns.css"/>
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../bower_components/jquery.lazyload/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="../bower_components/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="js/keys.js"></script>
-    <script type="text/javascript" src="js/AudioPlayer.js"></script>
-    <script type="text/javascript" src="js/Matriz.js"></script>
-    <script type="text/javascript" src="js/Baralho.js"></script>
-    <script type="text/javascript" src="js/Cartao.js"></script>
-    <script type="text/javascript" src="js/Jogo.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../bower_components/react/react.js"></script>
+    <script type="text/javascript" src="tests/js/build/AudioPlayer.js"></script>
+    <script type="text/javascript" src="tests/js/build/Mixins.js"></script>
+    <script type="text/javascript" src="tests/js/build/Alert.js"></script>
+    <script type="text/javascript" src="tests/js/build/Modal.js"></script>
+    <script type="text/javascript" src="tests/js/build/AlertModal.js"></script>
+    <script type="text/javascript" src="tests/js/build/Matriz.js"></script>
+    <script type="text/javascript" src="tests/js/build/MatrizCartao.js"></script>
+    <script type="text/javascript" src="tests/js/build/Baralho.js"></script>
+    <script type="text/javascript" src="tests/js/build/Cartao.js"></script>
+    <script type="text/javascript" src="tests/js/build/Functions.js"></script>
+    <script type="text/javascript" src="tests/js/build/NovoJogo.js"></script>
+    <script type="text/javascript" src="tests/js/build/Opcoes.js"></script>
+    <script type="text/javascript" src="tests/js/build/Jogo.js"></script>
+    <script type="text/javascript" src="tests/js/build/Main.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="btn-group jogo-opcoes" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                Jogo
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="modal" data-target="#modal-jogo"> Novo Jogo</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#opcoes">Opções</a></li>
-                <li><a href="#">Aparência</a></li>
-            </ul>
+        <div class="col-md-12">
+            <div class="btn-group jogo-opcoes" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    Jogo
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="novo-jogo"> Novo Jogo</a></li>
+                    <li><a href="#" id="opcoes">Opções</a></li>
+                    <li><a href="#">Aparência</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div id="jogo" class="row memoria-container">
+    <div class="row" id="novo-jogo-container">
 
+    </div>
+    <div class="row" id="opcoes-container">
+        <div class="modal fade" id="opcoes">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Opções</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="">Dificuldade</label><br/>
+                            <input type="radio" name="dificuldade" value="1"/><label for="">Fácil</label>
+                            <input type="radio" name="dificuldade" value="2" checked/><label for="">Normal</label>
+                            <input type="radio" name="dificuldade" value="3"/><label for="">Médio</label>
+                            <input type="radio" name="dificuldade" value="4"/><label for="">Difícil</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="tempo"/>
+                            <label for="">Contador de Tempo?</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" id="confirmar-opcao">OK</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+    </div>
+
+    <div id="jogo-container" class="container">
 
     </div>
-    <div class="row">
-        <span class="jogo-info tempo">Tempo: <i>00:00:00</i></span>
+    <div id="opcoes-container">
+
     </div>
-    <div class="modal fade" id="modal-jogo">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Novo Jogo</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li><a class="baralho-link" href="#" json="baralhos/animais.json">Animais e os seus gêneros</a></li>
-                        <li><a class="baralho-link" href="#" json="baralhos/arte.json">História da Arte</a></li>
-                        <li><a class="baralho-link" href="#" json="baralhos/frutas.json">Frutas e Legumes</a></li>
-                    </ul>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div>
-    <div class="modal fade" id="opcoes">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Opções</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="">Dificuldade</label><br/>
-                        <input type="radio" name="dificuldade" value="1"/><label for="">Fácil</label>
-                        <input type="radio" name="dificuldade" value="2" checked/><label for="">Normal</label>
-                        <input type="radio" name="dificuldade" value="3"/><label for="">Médio</label>
-                        <input type="radio" name="dificuldade" value="4"/><label for="">Difícil</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="tempo"/>
-                        <label for="">Contador de Tempo?</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" id="confirmar-opcao">OK</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div>
-    <div class="modal fade" id="completo">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Jogo Completo!</h4>
-                </div>
-                <div class="modal-body">
-                    <span class="jogo-info tempo">Tempo: <i>00:00:00</i></span>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" id="confirmar-jogo">OK</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
+    <div id="completo-container">
+
     </div>
 </div>
 </body>

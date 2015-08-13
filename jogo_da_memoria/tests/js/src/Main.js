@@ -1,22 +1,24 @@
+
 $(document).ready(function(){
+    _Audio = new AudioPlayer();
     var baralhos = [
         {
-            url:'../baralhos/animais.json',
+            url:'baralhos/animais.json',
             titulo:'Animais e os seus gêneros'
         },
         {
-            url:'../baralhos/arte.json',
+            url:'baralhos/arte.json',
             titulo:'História da Arte'
         },
         {
-            url:'../baralhos/frutas.json',
+            url:'baralhos/frutas.json',
             titulo:'Frutas e Legumes'
         }
     ];
 
 
     React.render(
-        <Jogo dificuldade={2} baralhoUrl="../baralhos/frutas.json"/>,
+        <Jogo dificuldade={2} baralhoUrl="baralhos/frutas.json"/>,
         document.getElementById('jogo-container')
     );
 
