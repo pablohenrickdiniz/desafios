@@ -3,7 +3,7 @@ var Jogo = React.createClass({
     getInitialState: function () {
         return {
             id: generateUUID(),
-            dificuldade: 3,
+            dificuldade: 2,
             baralho: null,
             baralhoUrl: '',
             cartao: null,
@@ -178,20 +178,30 @@ var Jogo = React.createClass({
                 cartoes.push(<Cartao {...cartao} key={key} index={index} altura={altura} largura={largura} onClick={self.selecionarCartao} ocupado={self.state.ocupado}/>);
             }
         });
+
+
+        var time = "";
+        var container = "";
+        if(cartoes.length > 0){
+            time =     <div className="row">
+                <div className="col-md-12">
+                    <span className="jogo-info">Tempo: {this.state.tempo.format('HH:mm:ss')}</span>
+                </div>
+            </div>;
+            container =    <div className="memoria-container row" style={style}>{cartoes}</div>;
+        }
+
         return (
             <div id={this.state.id}>
-                <div className="memoria-container row" style={style}>
-                    {cartoes}
-                </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <span className="jogo-info">Tempo: {this.state.tempo.format('HH:mm:ss')}</span>
-                    </div>
-                </div>
+                {time}
+                {container}
             </div>
         );
     },
-    reiniciar: function () {
+    reiniciar: function (modal) {
+        modal.setState({
+            open:false
+        });
         console.log('iniciar...');
         var self = this;
         var count = 1;
@@ -291,6 +301,7 @@ var Jogo = React.createClass({
                                     self.setState({ocupado: false});
                                     if (self.isCompleto()) {
                                         self.pausar();
+
                                         var props = {
                                             id: 'alert-modal',
                                             open: true,
@@ -307,7 +318,8 @@ var Jogo = React.createClass({
                                             type: 'info',
                                             title: 'Jogo Completo!',
                                             confirmText: "Continuar",
-                                            onConfirm: self.reiniciar
+                                            onConfirm:self.reiniciar,
+                                            footer:true
                                         };
                                         React.render(
                                             <AlertModal {...props}/>,

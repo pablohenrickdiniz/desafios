@@ -64,6 +64,10 @@ var Modal = React.createClass({
     },
     componentDidMount:function(){
         this.start();
+        var self = this;
+        $('#'+this.state.id).on('hidden.bs.modal', function (e) {
+            self.close();
+        });
     },
     hide:function(){
         this.setState({
@@ -72,7 +76,7 @@ var Modal = React.createClass({
     },
     onConfirm:function(){
         if(_.isFunction(this.state.onConfirm)){
-            this.state.onConfirm.apply(this,[this]);
+            this.state.onConfirm(this);
         }
     },
     cancel:function(){
@@ -107,7 +111,7 @@ var Modal = React.createClass({
                         </div>
                         <div className="modal-footer" style={!this.state.footer?{display:'none'}:{}}>
                             <button type="button" className="btn btn-default" onClick={this.cancel} disabled={this.state.cancelDisabled}>{this.state.cancelText}</button>
-                            <button type="button" className="btn btn-primary" onClick={this.state.onConfirm} disabled={this.state.confirmDisabled}>{this.state.confirmText}</button>
+                            <button type="button" className="btn btn-primary" onClick={this.onConfirm} disabled={this.state.confirmDisabled}>{this.state.confirmText}</button>
                         </div>
                     </div>
                 </div>
