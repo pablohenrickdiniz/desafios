@@ -15,6 +15,7 @@ function Baralho(options) {
             cartao.instanceCount = 1;
             cartao.virado = false;
             cartao.bloqueado = false;
+            cartao.hidden = true;
             self.cartoes.push(cartao);
         }
 
@@ -31,6 +32,7 @@ function Baralho(options) {
                     aux.virado = false;
                     aux.bloqueado = false;
                     aux.instanceCount = 2;
+                    cartao.hidden = true;
                     novos.push(aux);
                 }
                 else{

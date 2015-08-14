@@ -33,7 +33,7 @@ var Cartao = React.createClass({
             onClick:null,
             ocupado:false,
             color:'white',
-            hideImage:true
+            hidden:true
         };
     },
     render: function () {
@@ -45,20 +45,24 @@ var Cartao = React.createClass({
         };
         var className = this.state.virado?'cartao':'cartao back';
         var imagem = "";
-        if(!this.state.hideImage){
+        var titulo = "";
+        var children = [];
+
+        if(!this.state.hidden){
             imagem = this.state.imagem;
+            titulo = this.state.titulo;
         }
 
         return (
             <div className="slot" style={style}>
                 <div className={className} onClick={this.click}>
-                    <img data-original={imagem} className="lazy front-image" ref="frontImage" src=""/>
-                    <img data-original={this.state.fundo} className="lazy back-image" ref="backImage" src=""/>
-                    <span className="title" style={{color:this.state.color}}>{this.state.titulo}</span>
+                    <img  className="front-image" ref="frontImage" src={imagem}/>
+                    <img  className="back-image" ref="backImage" src={this.state.fundo}/>
+                    <span className="title" style={{color:this.state.color}}>{titulo}</span>
                 </div>
             </div>
         );
-    },
+    },/*
     componentDidMount:function(){
         $(React.findDOMNode(this.refs.backImage)).lazyload({
             effect:"fadeIn"
@@ -70,7 +74,7 @@ var Cartao = React.createClass({
     componentDidUpdate:function(){
         $(React.findDOMNode(this.refs.backImage)).lazyload();
         $(React.findDOMNode(this.refs.frontImage)).lazyload();
-    },
+    },*/
     click:function(){
         if(!this.state.bloqueado && !this.state.ocupado){
             if(_.isFunction(this.state.onClick)){

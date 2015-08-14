@@ -47,7 +47,8 @@ var Modal = React.createClass({
             confirm:true,
             cancel:true,
             confirmDisabled:false,
-            cancelDisabled:false
+            cancelDisabled:false,
+            close:true
         }
     },
     componentDidUpdate:function(){
@@ -86,14 +87,19 @@ var Modal = React.createClass({
         }
     },
     render: function () {
+        var close = "";
+        if(this.state.close){
+            close = <button type="button" className="close" aria-label="Close" onClick={this.close}>
+                <span aria-hidden="true" className="aria-hidden">&times;</span>
+            </button>;
+        }
+
         return (
             <div className="modal fade" id={this.state.id} style={{zIndex:this.state.layer}}>
                 <div className={"modal-dialog" + ' ' + this.state.size}>
                     <div className="modal-content">
                         <div className="modal-header">
-                            <button type="button" className="close" aria-label="Close" onClick={this.close}>
-                                <span aria-hidden="true" className="aria-hidden">&times;</span>
-                            </button>
+                            {close}
                             <h2 className="modal-title">{this.state.title}</h2>
                         </div>
                         <div className="modal-body">

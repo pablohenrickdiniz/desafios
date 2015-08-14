@@ -18,7 +18,7 @@ var NovoJogo = React.createClass({
         });
 
         return (
-            <Modal title="Novo Jogo" size="modal-sm" open={self.state.open} onClose={this.state.onClose}>
+            <Modal title="Novo Jogo" size="modal-sm" open={self.state.open} onClose={this.state.onClose} footer={false}>
                 <ul>
                     {items}
                 </ul>

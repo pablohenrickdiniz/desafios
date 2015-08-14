@@ -13,9 +13,9 @@ var Jogo = React.createClass({
             pausado: false,
             cartoesVirados: 0,
             totalCartoes: 0,
-            mudarDificuldade:false,
-            novoJogo:false,
-            tentativas:0
+            mudarDificuldade: false,
+            novoJogo: false,
+            tentativas: 0
         };
     },
     carregarBaralho: function (callback) {
@@ -25,10 +25,44 @@ var Jogo = React.createClass({
             type: 'post',
             dataType: 'json',
             success: function (options) {
-                self.setState({
-                    baralho: new Baralho(options)
+                var baralho = new Baralho(options);
+                React.render(
+                    <LoadModal progress={0} open={true} message="carregando imagens..."/>,
+                    document.getElementById('carregar-modal-container')
+                );
+                var cartoes = baralho.cartoes;
+                var imagens = cartoes.map(function(cartao){
+                    return cartao.imagem;
+                });
+                imagens.push(options.fundo);
+                var audios = [
+                    options.sons.viraCarta,
+                    options.sons.parEncontrado
+                ];
+
+
+                ResourceLoader.loadImages(imagens,function(progress){
+                    React.render(
+                        <LoadModal progress={progress} message="carregando imagens..."/>,
+                        document.getElementById('carregar-modal-container')
+                    );
                 },function(){
-                    callback.apply(self);
+                    ResourceLoader.loadAudios(audios,function(progress){
+                        React.render(
+                            <LoadModal progress={progress} message="carregando efeitos sonoros..."/>,
+                            document.getElementById('carregar-modal-container')
+                        );
+                    },function(){
+                        React.render(
+                            <LoadModal progress={100} message="carregamento concluído!" open={false}/>,
+                            document.getElementById('carregar-modal-container')
+                        );
+                        self.setState({
+                            baralho:baralho
+                        },function(){
+                            callback.apply(self);
+                        });
+                    });
                 });
             },
             error: function () {
@@ -42,12 +76,12 @@ var Jogo = React.createClass({
         self.carregarMatriz();
         self.setState({
             tempo: moment('0000-01-01 00:00:00'),
-            pausado:false,
-            tentativas:0,
-            cartoesVirados:0
+            pausado: false,
+            tentativas: 0,
+            cartoesVirados: 0
         });
         this.setInterval('tick', function () {
-            if(!self.state.pausado){
+            if (!self.state.pausado) {
                 var tempo = self.state.tempo;
                 tempo = tempo.add(1, 'seconds');
                 self.setState({
@@ -61,26 +95,26 @@ var Jogo = React.createClass({
             pausado: true
         });
     },
-    continuar:function(){
+    continuar: function () {
         this.updateState({
             pausado: false
         });
     },
-    componentDidUpdate:function(){
+    componentDidUpdate: function () {
         var self = this;
-        if(self.state.mudarDificuldade || self.state.novoJogo){
+        if (self.state.mudarDificuldade || self.state.novoJogo) {
             self.setState({
-                mudarDificuldade:false,
-                novoJogo:false
-            },function(){
-                this.carregarBaralho(function () {
-                    this.iniciar();
+                mudarDificuldade: false,
+                novoJogo: false
+            }, function () {
+                self.carregarBaralho(function () {
+                    self.iniciar();
                 });
             });
         }
-        if(self.state.playAudio){
+        if (self.state.playAudio) {
             self.setState({
-                playAudio:false
+                playAudio: false
             });
         }
     },
@@ -95,11 +129,11 @@ var Jogo = React.createClass({
             var pares = self.state.baralho.getPares();
             pares.suffle();
 
-            var max_dificuldade =self.state.baralho.getMaxDificuldade();
-            var dificuldade = self.state.dificuldade <= max_dificuldade?self.state.dificuldade:max_dificuldade;
+            var max_dificuldade = self.state.baralho.getMaxDificuldade();
+            var dificuldade = self.state.dificuldade <= max_dificuldade ? self.state.dificuldade : max_dificuldade;
 
             var matriz = new MatrizCartao(dificuldade * 2, dificuldade * 2);
-            var max = dificuldade * 2 *dificuldade * 2;
+            var max = dificuldade * 2 * dificuldade * 2;
             var count = 0;
             pares.forEach(function (par) {
                 if (count < max - 1) {
@@ -232,7 +266,7 @@ var Jogo = React.createClass({
                     console.log('primero passo');
                     cartao.bloqueado = true;
                     cartao.virado = true;
-                    cartao.hideImage = false;
+                    cartao.hidden = false;
                     _Audio.getChannel('a').play(self.state.baralho.sons.viraCarta);
                     self.updateState({
                         cartao: cartao,
@@ -243,7 +277,7 @@ var Jogo = React.createClass({
                 else if (self.state.cartao != cartao) {
                     _Audio.getChannel('b').play(self.state.baralho.sons.viraCarta);
                     cartao.virado = true;
-                    cartao.hideImage = false;
+                    cartao.hidden = false;
                     var callback = function () {
                         setTimeout(function () {
                             if (self.state.cartao.par == cartao.id || cartao.par == self.state.cartao.id) {
@@ -252,7 +286,7 @@ var Jogo = React.createClass({
                                 self.setState({
                                     cartao: null,
                                     matriz: matriz,
-                                    cartoesVirados:self.state.cartoesVirados+2
+                                    cartoesVirados: self.state.cartoesVirados + 2
                                 }, function () {
                                     self.setState({ocupado: false});
                                     if (self.isCompleto()) {
@@ -260,21 +294,20 @@ var Jogo = React.createClass({
                                         var props = {
                                             id: 'alert-modal',
                                             open: true,
-                                            message:
-                                                <div className="form-group">
+                                            message: <div className="form-group">
                                                 <span className="jogo-info">
-                                                    Tempo: {self.state.tempo.format('HH:mm:ss')}
-                                                </span><br />
-                                                <span className="jogo-info">
-                                                    Tentativas: {self.state.tentativas}
+                                                Tempo: {self.state.tempo.format('HH:mm:ss')}
                                                 </span>
-                                                </div>
-                                            ,
+                                                <br />
+                                                <span className="jogo-info">
+                                                Tentativas: {self.state.tentativas}
+                                                </span>
+                                            </div>,
                                             size: 'modal-sm',
                                             type: 'info',
                                             title: 'Jogo Completo!',
-                                            confirmText:"Continuar",
-                                            onConfirm:self.reiniciar
+                                            confirmText: "Continuar",
+                                            onConfirm: self.reiniciar
                                         };
                                         React.render(
                                             <AlertModal {...props}/>,
@@ -299,14 +332,14 @@ var Jogo = React.createClass({
                                         matriz: matriz,
                                         cartao: null,
                                         ocupado: false
-                                    },function(){
-                                        setTimeout(function(){
-                                            aux.hideImage = true;
-                                            cartao.hideImage = true;
+                                    }, function () {
+                                        setTimeout(function () {
+                                            aux.hidden = true;
+                                            cartao.hidden = true;
                                             self.setState({
-                                                matriz:matriz
+                                                matriz: matriz
                                             });
-                                        },250);
+                                        }, 250);
                                     });
                                 }, 200);
                             }
@@ -315,7 +348,7 @@ var Jogo = React.createClass({
 
                     self.setState({
                         matriz: matriz,
-                        tentativas:self.state.tentativas+1
+                        tentativas: self.state.tentativas + 1
                     }, callback);
                 }
                 else {
