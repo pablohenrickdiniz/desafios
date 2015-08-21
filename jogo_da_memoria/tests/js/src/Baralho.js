@@ -19,6 +19,7 @@ function Baralho(options) {
             self.cartoes.push(cartao);
         }
 
+
         var novos = [];
 
         self.cartoes.forEach(function(cartao,index){

@@ -3,6 +3,7 @@ function MatrizCartao(rows,cols){
     Matriz.call(this,rows,cols);
 }
 
+
 MatrizCartao.prototype.add = function(cartao){
     if(cartao instanceof Object){
         var pos = this.getNextPosition();

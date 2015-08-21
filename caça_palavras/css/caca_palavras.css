@@ -1,0 +1,33 @@
+.tabela{
+    border:1px solid #EEE;
+    padding:0;
+    margin:auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.tabela td{
+    width:50px;
+    height:50px;
+    border:1px solid #CCC;
+    display: table-cell;
+    white-space: nowrap;
+    margin:1px;
+    font-size:35px;
+    text-align: center;
+}
+
+
+.tabela td:hover{
+    cursor:pointer;
+    background-color: #afd9ee;
+    color:white;
+}
+
+.tabela td.correct{
+    background-color: #5cb85c;
+    color:white;
+}

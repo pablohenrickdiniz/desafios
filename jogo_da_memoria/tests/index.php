@@ -69,10 +69,10 @@
                             <label for="">Contador de Tempo?</label>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer">jsx
                         <button class="btn btn-primary" id="confirmar-opcao">OK</button>
                     </div>
-                </div><!-- /.modal-content -->
+                </div><!-- /.modal-content -->ls
             </div><!-- /.modal-dialog -->
         </div>
     </div>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/caca_palavras.css"/>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/react/react.js"></script>
+    <script type="text/javascript" src="../bower_components/custom_functions/functions.js"></script>
+    <script type="text/javascript" src="js/build/Text.js"></script>
+    <script type="text/javascript" src="js/build/Tabela.js"></script>
+    <script type="text/javascript" src="js/build/Main.js"></script>
+</head>
+<body>
+<div class="container thumbnail">
+    <div class="jumbotron">
+        <h1>Caça Palavras</h1>
+
+        <div class="page-header container btn-group">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                    Jogo
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="novo-jogo"> Novo Jogo</a></li>
+                    <li><a href="#" id="opcoes">Opções</a></li>
+                </ul>
+            </div>
+            <button type="button" onclick="voltarAoJogo()" class="btn btn-lg btn-danger">Continuar Mais Tarde</button>
+            <button type="button" id="instrucoes" style="float:right" class="btn btn-lg btn-default">Instruções</button>
+        </div>
+    </div>
+    <div class="row" id="novo-jogo-container">
+        <div class="col-md-12" id="tabela-container">
+           <table class="tabela">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>A</td>
+                    <td>C</td>
+                    <td>A</td>
+                    <td>T</td>
+                    <td>E</td>
+                </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>B</td>
+                   <td></td>
+                   <td></td>
+                   <td>O</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>A</td>
+                   <td></td>
+                   <td></td>
+                   <td>M</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>C</td>
+                   <td></td>
+                   <td></td>
+                   <td>A</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>A</td>
+                   <td></td>
+                   <td></td>
+                   <td>T</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>X</td>
+                   <td></td>
+                   <td></td>
+                   <td>E</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td>Y</td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+               </tr>
+           </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

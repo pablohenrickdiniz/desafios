@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/desafios.iml" filepath="$PROJECT_DIR$/.idea/desafios.iml" />
+      <module fileurl="file:///opt/lampp/htdocs/desafios/.idea/desafios.iml" filepath="/opt/lampp/htdocs/desafios/.idea/desafios.iml" />
     </modules>
   </component>
 </project>
-

@@ -18,6 +18,7 @@ var Jogo = React.createClass({
             tentativas: 0
         };
     },
+
     carregarBaralho: function (callback) {
         var self = this;
         $.ajax({

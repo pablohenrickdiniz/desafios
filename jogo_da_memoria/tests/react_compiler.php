@@ -13,7 +13,7 @@ if (file_exists('js/build')) {
 
 $output = [];
 $var = null;
-$response = exec('cd js&jsx /src /build', $output, $var);
+$response = exec('cd js&jsx src build', $output, $var);
 if ($var != 0) {
     echo 'erro ao compilar jsx';
     echo '<pre>';
