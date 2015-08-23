@@ -1,6 +1,12 @@
 define(['react','array','string','text','celula','matriz'],function(React,array,string,Text,Celula,Matriz){
     return  React.createClass({
         getDefaultProps:function(){
+            /*
+                linhas:O formato das linhas deve ser uma matriz(array de arrays) ou um array de strings,
+                na qual um espaço em branco representa uma letra aleatória e também é usado para aumentar
+                a largura da matriz, uma linha vazia ou nula representa uma linha inteira de letras aleatórias
+
+             */
             return {
                 linhas:[
                     '   ABOBORA',
@@ -10,24 +16,40 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                     '       O',
                     'OIGARFUAN',
                     '         A',
-                    '          S',
+                    '          S          ',
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
                     null
                 ]
             }
         },
+        cellStates:new Matriz(0,0),
         componentWillMount:function(){
             var self = this;
             var max_length = self.getMaxLength();
             var matriz = new Matriz(this.props.linhas.length,max_length);
+            self.cellStates = new Matriz(this.props.linhas.length,max_length);
             this.props.linhas.forEach(function(linha,i){
+                var aux = -1;
                 if(linha instanceof Array || typeof linha == 'string'){
                     linha.forEach(function(celula,j){
                         celula = celula.trim();
+                        if(celula == ''){
+                            celula = Text.getRandomLetter();
+                        }
                         matriz.set(i,j,celula);
+                        aux = j;
                     });
                 }
+                while(aux < max_length){
+                    aux++;
+                    matriz.set(i,aux,Text.getRandomLetter());
+                }
             });
-            console.log(matriz);
+
             this.setState({
                 matriz:matriz
             });
@@ -120,49 +142,32 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
             }
         },
         onCellSelect:function(cell){
-            if(!this.state.selectingText){
-                this.setState({
+            var self = this;
+            var index = cell.props.index;
+            if(!self.state.selectingText){
+                self.setState({
                     selectingText:true,
-                    startIndex:cell.props.index
+                    startIndex:index
                 },function(){
-                    cell.setState({
-                        state:'hover',
-                        blocked:true
-                    });
+                    self.cellStates.set(index.i,index.j,'hover');
                 });
             }
             else{
-                var si = this.state.startIndex;
-                var ei = this.state.endIndex;
+                var si = self.state.startIndex;
+                var ei = self.state.endIndex;
                 if(si != null && ei != null){
-                    var increment_i = 0;
-                    var increment_j = 0;
-                    if(si.i == ei.i){
-                        increment_i = si.i <= ei.i?1:-1;
-                    }
-                    else if(si.j == ei.j){
-                        increment_j = si.j <= ei.j?1:-1;
-                    }
-                    else{
-                        increment_i = si.i <= ei.i?1:-1;
-                        increment_j = si.j <= ei.j?1:-1;
-                    }
-
-                    var i = si.i;
-                    var j = si.j;
-                    var text = "";
-
-                    do{
-                        i+= increment_i;
-                        j+= increment_j;
-                    }
-                    while(i != ei.i && j != ei.j)
+                    var text = '';
+                    self.state.matriz.forLine(si.i,si.j,ei.i,ei.j,function(val){
+                        console.log(val);
+                        text += val;
+                    });
+                    console.log(text);
+                    console.log(text.reverse());
                 }
 
                 this.setState({
                     selectingText:false,
-                    starIndex:null,
-                    endIndex:null
+                    starIndex:null
                 });
             }
         }

@@ -1,3 +1,7 @@
+//Métodos adicionais para o Objeto Array
+
+
+//Embaralha um array
 Array.prototype.suffle = function(){
     var self = this;
     var size = self.length;
@@ -9,6 +13,7 @@ Array.prototype.suffle = function(){
     }
 };
 
+//Verifica se o elemento contém um valor especifico
 Array.prototype.contains = function(obj){
     return this.indexOf(obj) != -1;
 };

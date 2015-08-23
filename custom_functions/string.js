@@ -1,3 +1,8 @@
+//Métodos adicionais para o Objeto String
+
+
+
+//Mapeia todos os elementos para um novo array, aplicando a função func aos elementos
 String.prototype.map = function(func) {
     var size = this.length;
     var map = [];
@@ -7,6 +12,7 @@ String.prototype.map = function(func) {
     return map;
 };
 
+//Percorre todos os elementos da stringo, igual ao forEach comun do Objeto Array
 String.prototype.forEach = function(func){
     for(var i = 0; i < this.length;i++){
         var result = func(this.charAt(i),i,this);
@@ -14,6 +20,12 @@ String.prototype.forEach = function(func){
             break;
         }
     }
+};
+
+
+//Inverte a String
+String.prototype.reverse = function(){
+    return this.split('').reverse().join('');
 };
 
 

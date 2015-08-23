@@ -3,8 +3,8 @@ define(['react','text','lodash'],function(React,Text,_){
         getInitialState:function(){
             return {
                 state:'default',
-                blocked:false,
-                value:Text.getRandomLetter(),
+                checked:false,
+                value:'',
                 mouseIn:false
             };
         },
@@ -35,13 +35,17 @@ define(['react','text','lodash'],function(React,Text,_){
                 state.value = props.value;
             }
 
-            if(this.state.mouseIn){
-                state.state = 'hover';
+            if(!this.state.checked) {
+                if (this.state.mouseIn) {
+                    state.state = 'hover';
+                }
+                else {
+                    state.state = props.state;
+                }
             }
             else{
-                state.state = props.state;
+                state.state = 'checked';
             }
-
 
             this.setState(state);
         },
