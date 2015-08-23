@@ -69,67 +69,41 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
 
         render:function(){
             var self = this;
-            var max_length = self.getMaxLength();
-            var fill_cells = false;
             var stri = self.state.startIndex;
             var endi = self.state.endIndex;
+            var celulas = [];
+            var linhas = [];
 
-
-            var linhas = this.props.linhas.map(function(linha,index_a){
-                var celulas = [];
-                var props = {};
-                if(linha instanceof Array || typeof linha == 'string'){
-                    celulas = linha.map(function(celula,index_b){
-                        celula = celula.trim();
-                        if(celula == ''){
-                            celula = undefined;
-                        }
-                        props = {
-                            key:index_b,
-                            index:{i:index_a,j:index_b},
-                            value:celula,
-                            onClick:self.onCellSelect,
-                            parent:self
-                        };
-
-
-                        if(self.state.selectingText){
-                            if(stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index_a,index_b)){
-                                props.state = 'hover';
-                            }
-                            else{
-                                props.state = 'default';
-                            }
-                        }
-
-
-
-
-                        return React.createElement(Celula, React.__spread({},  props))
-                    });
+            self.state.matriz.forEach(function(celula,index){
+                celula = typeof celula == 'string'?  celula.trim():'';
+                if(celula == ''){
+                    celula = undefined;
                 }
+                var props = {
+                    key:index[1],
+                    index:{i:index[0],j:index[1]},
+                    value:celula,
+                    onClick:self.onCellSelect,
+                    parent:self
+                };
 
-                while(celulas.length < max_length){
-                    props = {
-                        key:celulas.length,
-                        index:{i:index_a,j:celulas.length},
-                        onClick:self.onCellSelect,
-                        parent:self
-                    };
 
-                    if(self.state.selectingText){
-                        if(stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index_a,celulas.length)){
-                            props.state = 'hover';
-                        }
-                        else{
-                            props.state = 'default';
-                        }
+                if(self.state.selectingText){
+                    if(stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index[0],index[1])){
+                        props.state = 'hover';
                     }
-
-                    celulas.push(React.createElement(Celula, React.__spread({},  props)));
+                    else{
+                        props.state = 'default';
+                    }
                 }
-                return React.createElement("tr", {key: index_a}, celulas)
+                celulas.push(React.createElement(Celula, React.__spread({},  props)));
+            },function(row){
+                linhas.push(React.createElement("tr", {key: row}, celulas));
+                celulas = [];
             });
+
+
+
             return (
                 React.createElement("table", {className: "tabela", onMouseMove: this.onMouseMove}, 
                     React.createElement("tbody", null, 

@@ -32,7 +32,7 @@ define(function(){
                 }
             }
             if(typeof afterRow == 'function'){
-                afterRow();
+                afterRow(x);
             }
         }
     };
