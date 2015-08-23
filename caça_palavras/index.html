@@ -5,13 +5,12 @@
     <title>Jogo da Memória</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/caca_palavras.css"/>
-    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../bower_components/react/react.js"></script>
-    <script type="text/javascript" src="../bower_components/custom_functions/functions.js"></script>
-    <script type="text/javascript" src="js/build/Text.js"></script>
-    <script type="text/javascript" src="js/build/Tabela.js"></script>
-    <script type="text/javascript" src="js/build/Main.js"></script>
+    <script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
+    <script type="text/javascript">
+        requirejs(['../lib/config','js/config'],function(){
+            requirejs(['js/build/main']);
+        });
+    </script>
 </head>
 <body>
 <div class="container thumbnail">

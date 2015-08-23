@@ -1,1 +1,3 @@
 /bower_components
+/caça_palavras/js/build/.module-cache*
+/.idea

@@ -21,7 +21,7 @@
 }
 
 
-.tabela td:hover{
+.tabela td.hover{
     cursor:pointer;
     background-color: #afd9ee;
     color:white;
