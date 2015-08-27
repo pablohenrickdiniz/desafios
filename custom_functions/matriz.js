@@ -27,7 +27,6 @@ define(function(){
         return false;
     };
 
-
     //obtém valor da posição x,y
     matriz.prototype.get = function(x,y){
         var self = this;

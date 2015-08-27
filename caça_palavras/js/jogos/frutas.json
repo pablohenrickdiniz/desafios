@@ -1,0 +1,41 @@
+{
+  "titulo":"Frutas",
+  "dica":"Nome de Frutas",
+  "dificuldade":3,
+  "linhas":[
+    "TRIGO  ABACATE",
+    "O   M      ",
+    "M    E  T",
+    "A     LARANJA",
+    "T   A NA",
+    "E    G  N",
+    "    E N  C",
+    "ALORECAA  I",
+    "  I     T  A",
+    " N       I",
+    "A         P"
+  ],
+  "linhas-matriz-exemplo":[
+    [" "," "," "," "," "," "," ","A","B","A","C","A","T","E"],
+    [" "," "," "," ","M"],
+    [" "," "," "," "," ","E"," "," ","T"," "],
+    [" "," "," "," "," "," ","L","A","R","A","N","J","A"],
+    [" "," "," "," "," ","A","N","A"],
+    [" "," "," "," "," ","G"," "," ","N"],
+    [" "," "," "," ","E"," "," ","N"," ","C"],
+    ["A","L","O","R","E","C","A"," "," "," ","I"],
+    [" "," ","I"," "," "," "," "," "," ","T"," ","A"],
+    [" ","N"," "," "],
+    ["A"," "]
+  ],
+  "palavras":[
+      "ABACATE",
+      "MELANCIA",
+      "TANGERINA",
+      "LARANJA",
+      "ACEROLA",
+      "PITANGA",
+      "TOMATE",
+      "TRIGO"
+  ]
+}

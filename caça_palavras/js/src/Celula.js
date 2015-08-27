@@ -58,7 +58,7 @@ define(['react','text','lodash'],function(React,Text,_){
             };
 
             return (
-                <td {...props}>{this.state.value}</td>
+                <td {...props}><span className="text">{this.state.value}</span></td>
             );
         },
         onClick:function(e){

@@ -58,7 +58,7 @@ define(['react','text','lodash'],function(React,Text,_){
             };
 
             return (
-                React.createElement("td", React.__spread({},  props), this.state.value)
+                React.createElement("td", React.__spread({},  props), React.createElement("span", {className: "text"}, this.state.value))
             );
         },
         onClick:function(e){
