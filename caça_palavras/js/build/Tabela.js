@@ -143,11 +143,10 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
             var linhas = [];
 
 
-            var marks = self.state.matriz.intervals.map(function(interval){
+            var marks = self.state.checkedIntervals.map(function(interval){
                 var si = interval.si;
                 var pos = {left:si.i*50,top:si.j*50};
             });
-
 
             self.state.matriz.forEach(function(celula,index){
                 celula = typeof celula == 'string'?  celula.trim():'';
