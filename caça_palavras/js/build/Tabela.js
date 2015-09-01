@@ -1,4 +1,4 @@
-define(['react','array','string','text','celula','matriz'],function(React,array,string,Text,Celula,Matriz){
+define(['react','array','string','text','celula','matriz','mathlib'],function(React,array,string,Text,Celula,Matriz){
     return  React.createClass({
         getDefaultProps:function(){
             /*
@@ -22,7 +22,8 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                 matriz:new Matriz(0,0),
                 encontradas:0,
                 checkedIntervals:[],
-                cellStates:new Matriz(0,0)
+                cellStates:new Matriz(0,0),
+                markStyles:[]
             };
         },
         cellStates:new Matriz(0,0),
@@ -52,6 +53,9 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
 
             this.setState({
                 matriz:matriz
+            });
+            $(window).resize(function(){
+                self.updateMarkStyles();
             });
         },
         getMaxLength:function(){
@@ -100,30 +104,9 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                 var si = interval.si;
                 var ei = interval.ei;
 
-                if(this.inline(si.i,si.j,ei.i,ei.j,index[0],index[1])){
-                    if(!classes.contains('checked')){
+                if(this.inline(si.i,si.j,ei.i,ei.j,index[0],index[1])) {
+                    if (!classes.contains('checked')) {
                         classes.push('checked');
-                    }
-
-                    var type = self.getInlineType(si.i,si.j,ei.i,ei.j,index[0],index[1]);
-                    if(!classes.contains(type)){
-                        classes.push(type);
-                    }
-
-                    if(!classes.contains(type+'-first') && si.i == index[0] && si.j == index[1]){
-                        classes.push(type+'-first');
-                    }
-
-                    if(!classes.contains(type+'-last') && ei.i == index[0] && ei.j == index[1]){
-                        classes.push(type+'-last');
-                    }
-
-
-                    if(!classes.contains('right') && si.j < ei.j){
-                        classes.push('right');
-                    }
-                    else if(!classes.contains('left')){
-                        classes.push('left');
                     }
                 }
             }
@@ -135,6 +118,48 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                 return classes.join(' ');
             }
         },
+        updateMarkStyles:function(){
+            var self = this;
+            var markStyles = self.state.checkedIntervals.map(function(interval,index){
+                var si = interval.si;
+                var ei = interval.ei;
+
+                var nodeA = React.findDOMNode(self.refs[si.i+'-'+si.j]);
+                var nodeB = React.findDOMNode(self.refs[ei.i+'-'+ei.j]);
+
+                var widthA = $(nodeA).width();
+                var widthB = $(nodeB).width();
+                var heightA = $(nodeA).height();
+                var heightB = $(nodeB).height();
+                var pa = $(nodeA).position();
+                var pb = $(nodeB).position();
+                var ca = {left:pa.left+(widthA/2),top:pa.top+(heightA/2)};
+                var cb = {left:pb.left+(widthB/2),top:pb.top+(heightB/2)};
+                var width = Math.distance(ca,cb);
+
+
+
+
+
+
+
+                var deg = Math.vmv(ca,cb);
+                var degree = Math.clockWiseDegreeFromVec(deg,{left:1,top:0});
+
+
+                return {
+                    left:ca.left,
+                    top:ca.top,
+                    width:width,
+                    transform:'rotate('+degree+'deg)',
+                    transformOrigin:'0 0'
+                };
+            });
+
+            self.setState({
+                markStyles:markStyles
+            });
+        },
         render:function(){
             var self = this;
             var stri = self.state.startIndex;
@@ -142,11 +167,10 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
             var celulas = [];
             var linhas = [];
 
-
-            var marks = self.state.checkedIntervals.map(function(interval){
-                var si = interval.si;
-                var pos = {left:si.i*50,top:si.j*50};
+            var marks = self.state.markStyles.map(function(style,index){
+                return React.createElement("span", {className: "mark", style: style, key: index});
             });
+
 
             self.state.matriz.forEach(function(celula,index){
                 celula = typeof celula == 'string'?  celula.trim():'';
@@ -158,7 +182,8 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                     index:{i:index[0],j:index[1]},
                     value:celula,
                     onClick:self.onCellSelect,
-                    parent:self
+                    parent:self,
+                    ref:index[0]+'-'+index[1]
                 };
 
                 if(self.state.selectingText && stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index[0],index[1])) {
@@ -179,6 +204,7 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
 
             return (
                 React.createElement("div", {className: "tabela-container"}, 
+                    marks, 
                     React.createElement("table", {className: "tabela", onMouseMove: this.onMouseMove}, 
                         React.createElement("tbody", null, 
                             linhas
@@ -215,11 +241,6 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                         text += val;
                     });
 
-                    if(si.i > ei.i || si.j > ei.j){
-                        var aux = si;
-                        si = ei;
-                        ei = aux;
-                    }
 
                     if(this.props.data.palavras.contains(text) || this.props.data.palavras.contains(text.reverse())){
                         var interval = {si:si,ei:ei};
@@ -228,6 +249,8 @@ define(['react','array','string','text','celula','matriz'],function(React,array,
                         checkedIntervals.push(interval);
                         self.setState({
                             checkedIntervals:checkedIntervals
+                        },function(){
+                            self.updateMarkStyles();
                         });
                     }
                 }

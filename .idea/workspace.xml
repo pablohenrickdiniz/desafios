@@ -1,198 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67b6fc12-7072-40d8-b47e-202ff8fa3c36" name="Default" comment="changed to matriz">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caça_palavras/js/jogos/frutas.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="67b6fc12-7072-40d8-b47e-202ff8fa3c36" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/caça_palavras/js/build/Celula.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/caça_palavras/js/build/Tabela.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/caça_palavras/js/build/main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/sons/109662__grunz__success.wav" afterPath="$PROJECT_DIR$/jogo_da_memoria/sons/109662__grunz__success.wav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/14167526-playing-card-back-side-60x90-mm-Stock-Vector-cards.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/14167526-playing-card-back-side-60x90-mm-Stock-Vector-cards.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/979a46ed6000168e916a6ef1230c9afb_large.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Art_history_game_5-3-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Art_history_game_5-3-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Art_history_game_5-6-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Art_history_game_5-6-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Cats.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Cats.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Girl with the Pearl.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Girl with the Pearl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Madonna and Child - Giotto.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Madonna and Child - Giotto.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Margot_in_blue.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Margot_in_blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Marguerite.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Marguerite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Portrait_of_a_lady_with_unicorn.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Portrait_of_a_lady_with_unicorn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Statue of Budda - 4th Century.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Statue of Budda - 4th Century.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Vicent_Van_Gogh.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/Vicent_Van_Gogh.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/abacaxi-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/abacaxi-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/abobora-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/abobora-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/agrião-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/agrião-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/alface-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/alface-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/almeirão-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/almeirão-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/animais-back.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/animais-back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/apito-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/apito-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/apontador-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/apontador-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/banana-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/banana-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/bananas-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/bananas-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/bananas_2-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/bananas_2-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/batata-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/batata-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/batata_doce-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/batata_doce-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/beringela-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/beringela-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/beterraba-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/beterraba-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/bode-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/bode-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/borboleta-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/borboleta-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cabra-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cabra-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cachorro-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cachorro-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cadela-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cadela-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/sons/cardSlide1.wav" afterPath="$PROJECT_DIR$/jogo_da_memoria/sons/cardSlide1.wav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/cardback.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/cardback.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/carneiro-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/carneiro-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/cartola-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/cartola-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/cará-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/cará-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cavalo-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/cavalo-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cenoura-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cenoura-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/cenoura-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/cenoura-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cereja-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cereja-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cereja_2-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/cereja_2-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/cheetah-card.gif" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/cheetah-card.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/chupeta-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/chupeta-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/coco-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/coco-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/coelha-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/coelha-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/coelho-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/coelho-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/colher-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/colher-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.jar" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/couve-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/couve-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/d0490860-0-large.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/d0490860-0-large.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/draenei-card-back-january-season10.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/draenei-card-back-january-season10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/egua-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/egua-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/elefanta-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/elefanta-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/elefante-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/elefante-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/elisabeth_vigee_le_brun.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/elisabeth_vigee_le_brun.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/espinafre-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/espinafre-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/formiga-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/formiga-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/frida_kahlo.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/frida_kahlo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/frutas-background.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/frutas-background.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/galinha-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/galinha-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/galo-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/galo-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/garfo-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/garfo-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/gata-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/gata-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/gato-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/gato-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/ife_head.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/ife_head.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/jabuticaba-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/jabuticaba-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/kiwi-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/kiwi-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/lampada-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/lampada-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/laranja-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/laranja-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/laranjas-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/laranjas-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/leao-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/leao-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/leoa-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/leoa-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/limao-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/limao-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/loading.gif" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/maca-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/maca-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/macaca-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/macaca-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/macaco-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/macaco-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/mandioca-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/mandioca-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/melancia-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/melancia-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/monalisa.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/monalisa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/morango-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/morango-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/arte/mosaico_de_cristo.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/arte/mosaico_de_cristo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/ovelha-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/ovelha-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/palhaço-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/palhaço-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pata-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pata-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pato-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pato-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pato-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pato-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pavao-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pavao-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pavoa-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/pavoa-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/peixe-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/peixe-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pena-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pena-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pente-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pente-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/pepino-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/pepino-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pera-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pera-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/peru-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/peru-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/perua-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/perua-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pessego-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pessego-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pilha-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pilha-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pimenta-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pimenta-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pimenta-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pimenta-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pimentao-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/pimentao-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pinto-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pinto-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pomba-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/pomba-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/porca-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/porca-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/porco-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/porco-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/porco-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/porco-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/quiabo-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/quiabo-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/repolho-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/verduras/repolho-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/sapa-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/sapa-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/sapo-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/sapo-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/tartaruga-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/tartaruga-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/tomate-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/tomate-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/misc/torneira-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/misc/torneira-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/touro-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/touro-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/tumblr_mctyd9tSHm1ra3jlho1_1280.jpg" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/backgrounds/tumblr_mctyd9tSHm1ra3jlho1_1280.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/uvas-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/uvas-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/uvas_2-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/frutas-legumes/uvas_2-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/img/animais/vaca-min.png" afterPath="$PROJECT_DIR$/jogo_da_memoria/img/animais/vaca-min.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/.htaccess" afterPath="$PROJECT_DIR$/jogo_da_memoria/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Alert.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Alert.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AlertModal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AlertModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AlertModal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AlertModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/AudioPlayer.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/AudioPlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AudioPlayer.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/AudioPlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AudioPlayer.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/AudioPlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/Baralho.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/Baralho.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Baralho.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Baralho.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Baralho.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/Cartao.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/Cartao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Cartao.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Cartao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Cartao.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Cartao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/js/src/Celula.js" afterPath="$PROJECT_DIR$/caça_palavras/js/src/Celula.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Functions.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Functions.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/Jogo.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/Jogo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Jogo.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Jogo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Jogo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/LinkedTable.js" afterPath="$PROJECT_DIR$/custom_functions/LinkedTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/LoadModal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/LoadModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/LoadModal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/LoadModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Main.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Matriz.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Matriz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Matriz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/MatrizCartao.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/MatrizCartao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/MatrizCartao.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/MatrizCartao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Mixins.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Mixins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Mixins.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Mixins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Modal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/NovoJogo.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/NovoJogo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/NovoJogo.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/NovoJogo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Opcoes.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/Opcoes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Opcoes.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/Opcoes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/ResourceLoader.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/build/ResourceLoader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/ResourceLoader.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js/src/ResourceLoader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/js/src/Tabela.js" afterPath="$PROJECT_DIR$/caça_palavras/js/src/Tabela.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/baralhos/animais.json" afterPath="$PROJECT_DIR$/jogo_da_memoria/baralhos/animais.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/array.js" afterPath="$PROJECT_DIR$/custom_functions/array.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/baralhos/arte.json" afterPath="$PROJECT_DIR$/jogo_da_memoria/baralhos/arte.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/css/caca_palavras.css" afterPath="$PROJECT_DIR$/caça_palavras/css/caca_palavras.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.html" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.php" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/compiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/js/config.js" afterPath="$PROJECT_DIR$/caça_palavras/js/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config.js" afterPath="$PROJECT_DIR$/lib/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/baralhos/frutas.json" afterPath="$PROJECT_DIR$/jogo_da_memoria/baralhos/frutas.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/functions.js" afterPath="$PROJECT_DIR$/custom_functions/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/index.html" afterPath="$PROJECT_DIR$/caça_palavras/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/index.html" afterPath="$PROJECT_DIR$/jogo_da_memoria/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/index.php" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/js_minifier.php" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/js_minifier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/keys.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/keys.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caça_palavras/js/src/main.js" afterPath="$PROJECT_DIR$/caça_palavras/js/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/js/main.js" afterPath="$PROJECT_DIR$/jogo_da_memoria/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/matriz.js" afterPath="$PROJECT_DIR$/custom_functions/matriz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/matriz_interval.js" afterPath="$PROJECT_DIR$/custom_functions/matriz_interval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/css/memoria.css" afterPath="$PROJECT_DIR$/jogo_da_memoria/css/memoria.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/css/patterns.css" afterPath="$PROJECT_DIR$/jogo_da_memoria/css/patterns.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogo_da_memoria/tests/react_compiler.php" afterPath="$PROJECT_DIR$/jogo_da_memoria/tests/react_compiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/string.js" afterPath="$PROJECT_DIR$/custom_functions/string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom_functions/text.js" afterPath="$PROJECT_DIR$/custom_functions/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="af6b19e9-56c5-4df6-bdf2-2612fe27e2d5" name="Failed commit: Default" comment="react tests" />
     <ignored path="desafios.iws" />
@@ -230,18 +46,28 @@
       <file leaf-file-name="Tabela.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caça_palavras/js/src/Tabela.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5503597" vertical-offset="1686" max-vertical-offset="3750">
-              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7894737" vertical-offset="1680" max-vertical-offset="4080">
+              <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caca_palavras.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/caça_palavras/css/caca_palavras.css">
+      <file leaf-file-name="Math.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/MathLib/src/Math.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1137" max-vertical-offset="1815">
+              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/caça_palavras/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.583333" vertical-offset="55" max-vertical-offset="720">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -285,15 +111,17 @@
         <option value="$PROJECT_DIR$/custom_functions/string.js" />
         <option value="$PROJECT_DIR$/custom_functions/functions.js" />
         <option value="$PROJECT_DIR$/custom_functions/array.js" />
-        <option value="$PROJECT_DIR$/lib/config.js" />
         <option value="$PROJECT_DIR$/jogo_da_memoria/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/caça_palavras/index.html" />
         <option value="$PROJECT_DIR$/caça_palavras/js/src/main.js" />
-        <option value="$PROJECT_DIR$/caça_palavras/js/src/Celula.js" />
         <option value="$PROJECT_DIR$/custom_functions/matriz.js" />
         <option value="$PROJECT_DIR$/caça_palavras/js/jogos/frutas.json" />
+        <option value="$PROJECT_DIR$/caça_palavras/js/build/Celula.js" />
+        <option value="$PROJECT_DIR$/caça_palavras/js/src/Celula.js" />
+        <option value="$PROJECT_DIR$/lib/config.js" />
         <option value="$PROJECT_DIR$/caça_palavras/css/caca_palavras.css" />
+        <option value="$PROJECT_DIR$/bower_components/MathLib/src/Math.js" />
         <option value="$PROJECT_DIR$/caça_palavras/js/src/Tabela.js" />
       </list>
     </option>
@@ -307,8 +135,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="999" />
+    <option name="x" value="-1" />
+    <option name="width" value="1282" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -333,7 +162,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -349,6 +177,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,11 +250,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caça_palavras" />
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MathLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desafios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MathLib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -420,48 +294,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caça_palavras" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jogos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caça_palavras" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,11 +312,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/caça_palavras/js/src" />
       <recent name="C:\xampp\htdocs\desafios\jogo_da_memoria\img\backgrounds" />
       <recent name="C:\xampp\htdocs\desafios\jogo_da_memoria" />
       <recent name="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js\src" />
       <recent name="C:\xampp\htdocs\desafios\jogo_da_memoria\tests\js" />
-      <recent name="C:\xampp\htdocs\desafios\bower_components\react" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/custom_functions" />
@@ -711,7 +546,19 @@
       <option name="project" value="LOCAL" />
       <updated>1440351282108</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed to matriz">
+      <created>1440686338804</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1440686338804</updated>
+    </task>
+    <task id="LOCAL-00032" summary="updade">
+      <created>1440771877145</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1440771877145</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -735,54 +582,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="999" extended-state="0" />
+    <frame x="-1" y="0" width="1282" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19679634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19428572" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20516963" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2645631" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29886913" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31350115" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19679634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20516963" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31350115" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2645631" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -812,7 +636,8 @@
     <MESSAGE value="react tests" />
     <MESSAGE value="re-upload" />
     <MESSAGE value="changed to matriz" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to matriz" />
+    <MESSAGE value="updade" />
+    <option name="LAST_COMMIT_MESSAGE" value="updade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -832,26 +657,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/caça_palavras/css/caca_palavras.css">
+    <entry file="file://$PROJECT_DIR$/lib/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1575">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/caça_palavras/js/jogos/frutas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="675">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jogo_da_memoria/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="270">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1115,24 +924,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jogo_da_memoria/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1815">
           <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1150,26 +945,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caça_palavras/js/src/Celula.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1350">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom_functions/matriz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1905">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-0.41966426" vertical-offset="1070" max-vertical-offset="1905">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caça_palavras/index.html">
+    <entry file="file://$PROJECT_DIR$/caça_palavras/js/src/Celula.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="720">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.19784173" vertical-offset="45" max-vertical-offset="1350">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/MathLib/src/Overlap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1178,22 +978,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="690">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caça_palavras/css/caca_palavras.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="1035">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caça_palavras/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.583333" vertical-offset="55" max-vertical-offset="720">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/MathLib/src/Math.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1137" max-vertical-offset="1815">
+          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/caça_palavras/js/src/Tabela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5503597" vertical-offset="1686" max-vertical-offset="3750">
-          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7894737" vertical-offset="1680" max-vertical-offset="4080">
+          <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
           <folding />
         </state>
       </provider>
