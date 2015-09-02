@@ -25,7 +25,10 @@ String.prototype.forEach = function(func){
 
 //Inverte a String
 String.prototype.reverse = function(){
-    return this.split('').reverse().join('');
+    if(this.reverseStr == undefined){
+        this.reverseStr = this.split('').reverse().join('');
+    }
+    return this.reverseStr;
 };
 
 

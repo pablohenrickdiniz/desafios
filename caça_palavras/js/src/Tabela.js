@@ -20,12 +20,13 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 startIndex:null,
                 endIndex:null,
                 matriz:new Matriz(0,0),
-                encontradas:0,
                 checkedIntervals:[],
                 cellStates:new Matriz(0,0),
-                markStyles:[]
+                markStyles:[],
+                tmpMarkStyle:null
             };
         },
+        encontradas:[],
         cellStates:new Matriz(0,0),
         componentWillMount:function(){
             var self = this;
@@ -118,42 +119,57 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 return classes.join(' ');
             }
         },
+        getMarkStyle:function(indexA,indexB){
+            var self = this;
+            var nodeA = React.findDOMNode(self.refs[indexA.i+'-'+indexA.j]);
+            var nodeB = React.findDOMNode(self.refs[indexB.i+'-'+indexB.j]);
+
+            var widthA = $(nodeA).width();
+            var widthB = $(nodeB).width();
+            var heightA = $(nodeA).height();
+            var heightB = $(nodeB).height();
+            var pa = $(nodeA).position();
+            var pb = $(nodeB).position();
+            var ca = {left:pa.left+(widthA/2),top:pa.top+(heightA/2)};
+            var cb = {left:pb.left+(widthB/2),top:pb.top+(heightB/2)};
+            var width = Math.distance(ca,cb);
+
+            if(ca.top > cb.top ){
+                var aux = ca;
+                ca =cb;
+                cb = aux;
+            }
+
+
+            var deg = Math.vmv(cb,ca);
+
+            console.log(deg);
+            console.log(Math.absv(deg));
+
+
+
+            var origin = {left:1,top:0};
+
+            var degree = Math.clockWiseDegreeFromVec(deg,origin);
+
+            var med = Math.med(cb,ca);
+
+
+            return {
+                left:ca.left,
+                top:ca.top,
+                width:width,
+                transform:'rotate('+degree+'deg)',
+                transformOrigin:'3px 0'
+            };
+        },
         updateMarkStyles:function(){
             var self = this;
+            
             var markStyles = self.state.checkedIntervals.map(function(interval,index){
                 var si = interval.si;
                 var ei = interval.ei;
-
-                var nodeA = React.findDOMNode(self.refs[si.i+'-'+si.j]);
-                var nodeB = React.findDOMNode(self.refs[ei.i+'-'+ei.j]);
-
-                var widthA = $(nodeA).width();
-                var widthB = $(nodeB).width();
-                var heightA = $(nodeA).height();
-                var heightB = $(nodeB).height();
-                var pa = $(nodeA).position();
-                var pb = $(nodeB).position();
-                var ca = {left:pa.left+(widthA/2),top:pa.top+(heightA/2)};
-                var cb = {left:pb.left+(widthB/2),top:pb.top+(heightB/2)};
-                var width = Math.distance(ca,cb);
-
-
-
-
-
-
-
-                var deg = Math.vmv(ca,cb);
-                var degree = Math.clockWiseDegreeFromVec(deg,{left:1,top:0});
-
-
-                return {
-                    left:ca.left,
-                    top:ca.top,
-                    width:width,
-                    transform:'rotate('+degree+'deg)',
-                    transformOrigin:'0 0'
-                };
+                return self.getMarkStyle(si,ei);
             });
 
             self.setState({
@@ -171,6 +187,10 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 return <span className="mark" style={style} key={index}></span>;
             });
 
+            if(self.state.tmpMarkStyle != null){
+                marks.push(<span className="mark" style={self.state.tmpMarkStyle} key={marks.length}></span>);
+            }
+
 
             self.state.matriz.forEach(function(celula,index){
                 celula = typeof celula == 'string'?  celula.trim():'';
@@ -187,7 +207,7 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 };
 
                 if(self.state.selectingText && stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index[0],index[1])) {
-                    props.state = 'hover';
+                    props.state = 'default';
                 }
                 else{
                     props.state = self.getCheckedState(index);
@@ -215,22 +235,33 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
         },
         onMouseMove:function(e){
             e.preventDefault();
-            if(this.state.selectingText){
-
-
+            var self = this;
+            if(self.state.selectingText){
+                var startIndex = self.state.startIndex;
+                var endIndex = self.state.endIndex;
+                self.setState({
+                    tmpMarkStyle:self.getMarkStyle(startIndex,endIndex)
+                });
             }
         },
         onCellSelect:function(cell){
             var self = this;
             var index = cell.props.index;
             if(!self.state.selectingText){
+                var nodeA = React.findDOMNode(self.refs[index.i+'-'+index.j]);
+                var pos = $(nodeA).position();
+                var ca = {left:pos.left+($(nodeA).width()/2),top:pos.top+($(nodeA).height()/2)};
                 self.setState({
                     selectingText:true,
-                    startIndex:index
-                },function(){
-                    self.cellStates.set(index.i,index.j,'hover');
+                    startIndex:index,
+                    tmpMarkStyle:{
+                        left:ca.left,
+                        top:ca.top,
+                        width:25,
+                        transform:'rotate(0deg)',
+                        transformOrigin:'3px 0'
+                    }
                 });
-
             }
             else{
                 var si = self.state.startIndex;
@@ -241,23 +272,31 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                         text += val;
                     });
 
+                    if(!self.encontradas.contains(text) && !self.encontradas.contains(text.reverse())){
+                        var palavras = self.props.data.palavras;
+                        if(palavras.contains(text) || palavras.contains(text.reverse())){
+                            var interval = {si:si,ei:ei};
+                            var i = palavras.indexOf(text);
+                            i = i == -1?palavras.indexOf(text.reverse()):i;
 
-                    if(this.props.data.palavras.contains(text) || this.props.data.palavras.contains(text.reverse())){
-                        var interval = {si:si,ei:ei};
+                            self.encontradas.push(palavras[i]);
 
-                        var checkedIntervals = self.state.checkedIntervals;
-                        checkedIntervals.push(interval);
-                        self.setState({
-                            checkedIntervals:checkedIntervals
-                        },function(){
-                            self.updateMarkStyles();
-                        });
+
+                            var checkedIntervals = self.state.checkedIntervals;
+                            checkedIntervals.push(interval);
+                            self.setState({
+                                checkedIntervals:checkedIntervals
+                            },function(){
+                                self.updateMarkStyles();
+                            });
+                        }
                     }
                 }
 
                 this.setState({
                     selectingText:false,
-                    starIndex:null
+                    starIndex:null,
+                    tmpMarkStyle:null
                 });
             }
         }

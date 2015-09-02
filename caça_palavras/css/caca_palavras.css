@@ -35,23 +35,27 @@
 
 .tabela td.hover{
     cursor:pointer;
-    background-color: #00b3ee;
-    color:white;
+    color:#00b3ee;
 }
 
+.tabela td.checked{
+    color:#00b3ee;
+}
 
 .mark{
-    background-color: black;
+    background-color: transparent;
     display:block;
     content:'';
     top:10px;
     width:50px;
-    height:1px;
+    border-top:3px solid #00b3ee;
     position: absolute;
-    margin: auto;
     z-index: 3;
 }
 
+.mark:hover{
+    cursor:pointer;
+}
 
 .tabela-container{
     position:relative;
