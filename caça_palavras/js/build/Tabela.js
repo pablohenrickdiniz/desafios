@@ -99,25 +99,19 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
         },
         getCheckedState:function(index){
             var self = this;
-            var classes = [];
+            var checked =false;
+
             for(var i = 0; i < self.state.checkedIntervals.length;i++){
                 var interval = self.state.checkedIntervals[i];
-                var si = interval.si;
-                var ei = interval.ei;
+                si = interval.si;
+                ei = interval.ei;
 
-                if(this.inline(si.i,si.j,ei.i,ei.j,index[0],index[1])) {
-                    if (!classes.contains('checked')) {
-                        classes.push('checked');
-                    }
+                if(self.inline(si.i,si.j,ei.i,ei.j,index[0],index[1])) {
+                    return 'checked';
                 }
             }
 
-            if(classes.length == 0){
-                return 'default';
-            }
-            else{
-                return classes.join(' ');
-            }
+            return 'default';
         },
         getMarkStyle:function(indexA,indexB){
             var self = this;
@@ -140,20 +134,11 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 cb = aux;
             }
 
-
             var deg = Math.vmv(cb,ca);
 
-            console.log(deg);
-            console.log(Math.absv(deg));
-
-
-
             var origin = {left:1,top:0};
-
             var degree = Math.clockWiseDegreeFromVec(deg,origin);
-
             var med = Math.med(cb,ca);
-
 
             return {
                 left:ca.left,
@@ -207,7 +192,7 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                 };
 
                 if(self.state.selectingText && stri != null && endi != null && self.inline(stri.i,stri.j,endi.i,endi.j,index[0],index[1])) {
-                    props.state = 'default';
+                    props.state = 'checked';
                 }
                 else{
                     props.state = self.getCheckedState(index);
@@ -223,7 +208,7 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
 
 
             return (
-                React.createElement("div", {className: "tabela-container"}, 
+                React.createElement("div", {className: "tabela-container pencil-hover"}, 
                     marks, 
                     React.createElement("table", {className: "tabela", onMouseMove: this.onMouseMove}, 
                         React.createElement("tbody", null, 

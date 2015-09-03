@@ -34,12 +34,12 @@
 }
 
 .tabela td.hover{
-    cursor:pointer;
-    color:#00b3ee;
+    cursor:url(../img/pencil.png), auto;
+    color:#5cb85c;
 }
 
 .tabela td.checked{
-    color:#00b3ee;
+    color:#5cb85c;
 }
 
 .mark{
@@ -48,13 +48,13 @@
     content:'';
     top:10px;
     width:50px;
-    border-top:3px solid #00b3ee;
+    border-top:3px solid #5cb85c;
     position: absolute;
     z-index: 3;
 }
 
 .mark:hover{
-    cursor:pointer;
+    cursor:url(../img/pencil.png), auto;
 }
 
 .tabela-container{
@@ -63,5 +63,7 @@
     margin: auto;
 }
 
-
+.pencil-hover{
+    cursor:url(../img/pencil.png), auto;
+}
 
