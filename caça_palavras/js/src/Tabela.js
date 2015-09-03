@@ -1,4 +1,4 @@
-define(['react','array','string','text','celula','matriz','mathlib'],function(React,array,string,Text,Celula,Matriz){
+define(['react','array','string','text','celula','matriz','mathlib','keys'],function(React,array,string,Text,Celula,Matriz,Keys){
     return  React.createClass({
         getDefaultProps:function(){
             /*
@@ -206,11 +206,10 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
             });
 
 
-
             return (
-                <div className="tabela-container pencil-hover">
+                <div className="tabela-container pencil-hover" onKeyDown={this.checkEsc}>
                     {marks}
-                    <table className="tabela" onMouseMove={this.onMouseMove}>
+                    <table className="tabela" onMouseMove={this.onMouseMove} >
                         <tbody>
                             {linhas}
                         </tbody>
@@ -277,12 +276,21 @@ define(['react','array','string','text','celula','matriz','mathlib'],function(Re
                         }
                     }
                 }
-
-                this.setState({
-                    selectingText:false,
-                    starIndex:null,
-                    tmpMarkStyle:null
-                });
+                self.unselectState();
+            }
+        },
+        unselectState:function(){
+            this.setState({
+                selectingText:false,
+                starIndex:null,
+                tmpMarkStyle:null
+            });
+        },
+        checkEsc:function(e){
+            e.preventDefault();
+            console.log('entrou');
+            if(e.which == Keys.KEY_ESC){
+                this.unselectState();
             }
         }
     });
