@@ -1,5 +1,6 @@
 define(['jquery'],function($){
     var Keys = {
+        deny:false,
         keySequence: [],
         allowedSequences:[],
         sequenceIs: function (sequence, ordered,exactLength) {
@@ -24,11 +25,20 @@ define(['jquery'],function($){
 
             return true;
         },
-        allowOnly:function(){
+        denyAll:function(){
+            this.deny = true;
+        },
+        allowAll:function(){
+            this.deny = false;
+        },
+        allow:function(){
             var self = this;
             var size = arguments.length;
             for(var i =0; i < size;i++){
                 var sequence = arguments[i];
+                if(!(sequence instanceof Array)){
+                    sequence = [sequence];
+                }
                 self.allowedSequences.push(sequence);
             }
         },
@@ -94,16 +104,18 @@ define(['jquery'],function($){
     });
 
     $(document).on("keydown",function(e){
-        var size = Keys.allowedSequences.length;
-        var allowed = false;
-        for(var i = 0; i < size;i++){
-            var sequence = Keys.allowedSequences[i];
-            if(Keys.sequenceIs(sequence,false,true)){
-                allowed = true;
+        if(Keys.deny){
+            var size = Keys.allowedSequences.length;
+            var allowed = false;
+            for(var i = 0; i < size;i++){
+                var sequence = Keys.allowedSequences[i];
+                if(Keys.sequenceIs(sequence,false,true)){
+                    allowed = true;
+                }
             }
-        }
-        if(!allowed){
-            e.preventDefault();
+            if(!allowed){
+                e.preventDefault();
+            }
         }
     });
 

@@ -6,13 +6,10 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/caca_palavras.css"/>
     <script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
-    <script type="text/javascript">
-        requirejs(['../lib/config','js/config'],function(){
-            requirejs(['js/build/main']);
-        });
-    </script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
+
 <div class="container thumbnail">
     <div class="jumbotron">
         <h1>Caça Palavras</h1>
@@ -37,6 +34,9 @@
     <div class="row" id="novo-jogo-container">
         <div class="col-md-12" id="tabela-container">
         </div>
+    </div>
+    <div id="modal-container">
+
     </div>
 </div>
 </body>
