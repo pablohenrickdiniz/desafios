@@ -1,53 +1,48 @@
 define(
-    ['react','array','string','text','celula','matriz','mathlib','keys'],
-    function(React,array,string,Text,Celula,Matriz,mathlib,Keys){
+    ['react','array','string','text','Celula','matriz','mathlib','keys','UpdateMixin'],
+    function(React,array,string,Text,Celula,Matriz,mathlib,Keys,updateMixin){
         return  React.createClass({
-            getDefaultProps:function(){
-                /*
-                 linhas:O formato das linhas deve ser uma matriz(array de arrays) ou um array de strings,
-                 na qual um espaço em branco representa uma letra aleatória e também é usado para aumentar
-                 a largura da matriz, uma linha vazia ou nula representa uma linha inteira de letras aleatórias
-
-                 */
+            mixins:[updateMixin],
+            encontradas:[],
+            getInitialState:function(){
                 return {
                     data:{
                         linhas:[],
                         palavras:[]
-                    }
-                }
-            },
-            getInitialState:function(){
-                return {
+                    },
                     selectingText:false,
                     startIndex:null,
                     endIndex:null,
                     matriz:new Matriz(0,0),
                     checkedIntervals:[],
-                    cellStates:new Matriz(0,0),
                     markStyles:[],
-                    tmpMarkStyle:null
+                    tmpMarkStyle:null,
+                    paused:false
                 };
             },
-            encontradas:[],
-            cellStates:new Matriz(0,0),
             componentWillMount:function(){
+                var self = this;
                 Keys.denyAll();
                 Keys.allow(
                     Keys.KEY_ESC,
                     Keys.KEY_PF5
                 );
-                var self = this;
+
                 $(document).on('keydown',function(e){
                     if(e.which == Keys.KEY_ESC){
                         self.unselectState();
                     }
                 });
 
+                $(window).resize(function(){
+                    self.updateMarkStyles();
+                });
+            },
+            start:function(){
                 var self = this;
                 var max_length = self.getMaxLength();
-                var linhas = this.props.data.linhas;
+                var linhas = this.state.data.linhas;
                 var matriz = new Matriz(linhas.length,max_length);
-                self.cellStates = new Matriz(linhas.length,max_length);
                 linhas.forEach(function(linha,i){
                     var aux = -1;
                     if(linha instanceof Array || typeof linha == 'string'){
@@ -66,15 +61,15 @@ define(
                     }
                 });
 
-                this.setState({
+                self.setState({
                     matriz:matriz
                 });
-                $(window).resize(function(){
-                    self.updateMarkStyles();
-                });
+            },
+            componentDidMount:function(){
+                this.start();
             },
             getMaxLength:function(){
-                return this.props.data.linhas.reduce(function(oldval,nextval){
+                return this.state.data.linhas.reduce(function(oldval,nextval){
                     if(nextval instanceof Array || typeof nextval == 'string'){
                         return nextval.length>oldval?nextval.length:oldval;
                     }
@@ -218,79 +213,81 @@ define(
                     celulas = [];
 
                 });
-
-
                 return (
-                    <div className="tabela-container pencil-hover">
-                    {marks}
-                        <table className="tabela" onMouseMove={this.onMouseMove}>
-                            <tbody>
+                    <div className="jogo">
+                        <div className="tabela-container pencil-hover">
+                            {marks}
+                            <table className="tabela" onMouseMove={this.onMouseMove}>
                             {linhas}
-                            </tbody>
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 );
             },
             onMouseMove:function(e){
-                e.preventDefault();
                 var self = this;
-                if(self.state.selectingText){
-                    var startIndex = self.state.startIndex;
-                    var endIndex = self.state.endIndex;
-                    self.setState({
-                        tmpMarkStyle:self.getMarkStyle(startIndex,endIndex)
-                    });
+                if(!self.state.paused){
+                    e.preventDefault();
+                    if(self.state.selectingText && !self.state.paused){
+                        var startIndex = self.state.startIndex;
+                        var endIndex = self.state.endIndex;
+                        self.setState({
+                            tmpMarkStyle:self.getMarkStyle(startIndex,endIndex)
+                        });
+                    }
                 }
             },
             onCellSelect:function(cell){
                 var self = this;
-                var index = cell.props.index;
-                if(!self.state.selectingText){
-                    var nodeA = React.findDOMNode(self.refs[index.i+'-'+index.j]);
-                    var pos = $(nodeA).position();
-                    var ca = {left:pos.left+($(nodeA).width()/2),top:pos.top+($(nodeA).height()/2)};
-                    self.setState({
-                        selectingText:true,
-                        startIndex:index,
-                        tmpMarkStyle:{
-                            left:ca.left,
-                            top:ca.top,
-                            width:25,
-                            transform:'rotate(0deg)',
-                            transformOrigin:'3px 0'
-                        }
-                    });
-                }
-                else{
-                    var si = self.state.startIndex;
-                    var ei = self.state.endIndex;
-                    if(si != null && ei != null){
-                        var text = '';
-                        self.state.matriz.forLine(si.i,si.j,ei.i,ei.j,function(val){
-                            text += val;
+                if(!self.state.paused){
+                    var index = cell.props.index;
+                    if(!self.state.selectingText){
+                        var nodeA = React.findDOMNode(self.refs[index.i+'-'+index.j]);
+                        var pos = $(nodeA).position();
+                        var ca = {left:pos.left+($(nodeA).width()/2),top:pos.top+($(nodeA).height()/2)};
+                        self.setState({
+                            selectingText:true,
+                            startIndex:index,
+                            tmpMarkStyle:{
+                                left:ca.left,
+                                top:ca.top,
+                                width:25,
+                                transform:'rotate(0deg)',
+                                transformOrigin:'3px 0'
+                            }
                         });
+                    }
+                    else{
+                        var si = self.state.startIndex;
+                        var ei = self.state.endIndex;
+                        if(si != null && ei != null){
+                            var text = '';
+                            self.state.matriz.forLine(si.i,si.j,ei.i,ei.j,function(val){
+                                text += val;
+                            });
 
-                        if(!self.encontradas.contains(text) && !self.encontradas.contains(text.reverse())){
-                            var palavras = self.props.data.palavras;
-                            if(palavras.contains(text) || palavras.contains(text.reverse())){
-                                var interval = {si:si,ei:ei};
-                                var i = palavras.indexOf(text);
-                                i = i == -1?palavras.indexOf(text.reverse()):i;
+                            if(!self.encontradas.contains(text) && !self.encontradas.contains(text.reverse())){
+                                var palavras = self.state.data.palavras;
+                                if(palavras.contains(text) || palavras.contains(text.reverse())){
+                                    var interval = {si:si,ei:ei};
+                                    var i = palavras.indexOf(text);
+                                    i = i == -1?palavras.indexOf(text.reverse()):i;
 
-                                self.encontradas.push(palavras[i]);
+                                    self.encontradas.push(palavras[i]);
 
 
-                                var checkedIntervals = self.state.checkedIntervals;
-                                checkedIntervals.push(interval);
-                                self.setState({
-                                    checkedIntervals:checkedIntervals
-                                },function(){
-                                    self.updateMarkStyles();
-                                });
+                                    var checkedIntervals = self.state.checkedIntervals;
+                                    checkedIntervals.push(interval);
+                                    self.setState({
+                                        checkedIntervals:checkedIntervals
+                                    },function(){
+                                        self.updateMarkStyles();
+                                    });
+                                }
                             }
                         }
+                        self.unselectState();
                     }
-                    self.unselectState();
                 }
             },
             unselectState:function(){

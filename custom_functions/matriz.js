@@ -7,7 +7,7 @@ define(function(){
         self.cols = cols;
     };
 
-    //verifica se a posição i,j está alinhado entre si,ej e ei, ej na vertical, na horizntal ou na diagonal
+    //verifica se a posição i,j está alinhado entre si,ej e ei, ej na vertical, na horizontal ou na diagonal
     matriz.inline = function(si,sj,ei,ej,i,j){
         var max_i = Math.max(si,ei);
         var max_j = Math.max(sj,ej);

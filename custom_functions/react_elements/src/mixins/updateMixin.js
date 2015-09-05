@@ -1,4 +1,4 @@
-define(['lodash'],function(){
+define(['lodash'],function(_){
     return {
         componentWillMount: function () {
             this.updateState(this.props);

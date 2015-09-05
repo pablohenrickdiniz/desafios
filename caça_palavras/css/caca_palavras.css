@@ -67,3 +67,8 @@
     cursor:url(../img/pencil.png), auto;
 }
 
+.tempo{
+    font-size:20px;
+    left:20px;
+    position: relative;
+}

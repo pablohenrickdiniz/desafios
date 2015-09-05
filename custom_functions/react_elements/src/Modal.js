@@ -1,4 +1,4 @@
-define(['react','updateMixin','uuid'],function(React,updateMixin){
+define(['react','UpdateMixin','uuid','jquery'],function(React,updateMixin,uuid,$){
     var Modal = React.createClass({
         mixins:[updateMixin],
         options: {
@@ -24,6 +24,7 @@ define(['react','updateMixin','uuid'],function(React,updateMixin){
             footer:React.PropTypes.bool,
             open:React.PropTypes.bool
         },
+
         getInitialState:function(){
             return {
                 id:generateUUID(),
@@ -48,15 +49,15 @@ define(['react','updateMixin','uuid'],function(React,updateMixin){
             }
         },
         componentDidMount:function(){
-            this.start();
-        },
-        hide:function(){
-            this.setState({
-                open:false
-            });
+            var self = this;
+            self.start();
+            var node =  React.findDOMNode(this.refs.modal);
+            $(node).on('hidden.bs.modal', function (e) {
+                self.close();
+            })
+
         },
         close:function(){
-            this.hide();
             if(_.isFunction(this.state.onClose)){
                 this.state.onClose(this);
             }
@@ -75,7 +76,7 @@ define(['react','updateMixin','uuid'],function(React,updateMixin){
                     <div className={"modal-dialog" + ' ' + this.state.size}>
                         <div className="modal-content">
                             <div className="modal-header">
-                                <button type="button" className="close" aria-label="Close" onClick={this.close}>
+                                <button type="button" className="close" aria-label="Close" data-dismiss="modal">
                                     <span aria-hidden="true" className="aria-hidden">&times;</span>
                                 </button>
                                 <h2 className="modal-title">{this.state.title}</h2>

@@ -12,7 +12,7 @@ String.prototype.map = function(func) {
     return map;
 };
 
-//Percorre todos os elementos da stringo, igual ao forEach comun do Objeto Array
+//Percorre todos os elementos da string, igual ao forEach comun do Objeto Array
 String.prototype.forEach = function(func){
     for(var i = 0; i < this.length;i++){
         var result = func(this.charAt(i),i,this);

@@ -1,6 +1,32 @@
 requirejs.config({
-    paths:{
-        tabela:'./js/build/Tabela',
-        celula:'./js/build/Celula'
+    "paths":{
+        "ModalElement":'../custom_functions/react_elements/build/Modal',
+        "RadioElement":'../custom_functions/react_elements/build/Radio',
+        "UpdateMixin":'../custom_functions/react_elements/build/mixins/updateMixin',
+        "SetIntervalMixin":"../custom_functions/react_elements/build/mixins/setIntervalMixin",
+        "Tabela":"./js/build/Tabela",
+        "Celula":"./js/build/Celula",
+        "Jogo":"./js/build/Jogo",
+        "NovoJogo":"./js/build/NovoJogo",
+        "shim":{
+            "Main":{
+                deps:["SetIntervalMixin"]
+            },
+            "Tabela":{
+                deps:["UpdateMixin"]
+            },
+            "ModalElement":{
+                deps:["UpdateMixin"]
+            },
+            "RadioElement":{
+                deps:["UpdateMixin"]
+            },
+            "UpdateMixin":{
+                deps:["lodash"]
+            },
+            "NovoJogo":{
+                deps:["UpdateMixin"]
+            }
+        }
     }
 });
