@@ -4,7 +4,9 @@ define(['react','updateMixin'],function(React,updateMixin){
         getInitialState:function(){
             return {
                 options:{},
-                name:''
+                name:'',
+                checked:null,
+                ref:'radio'
             };
         },
         render:function(){
@@ -13,9 +15,14 @@ define(['react','updateMixin'],function(React,updateMixin){
             var options = self.state.options;
             Object.keys(options).forEach(function(name,index){
                 var value = options[name];
+                var checked = (self.state.checked == null && index == 0)||(self.state.checked == value)
+                var ref = index;
+                if(checked){
+                    ref = 'checked';
+                }
                 inputs.push(
                     <div className="radioGroup" key={index}>
-                        <input name={self.state.name} type="radio" val={value}/>
+                        <input name={self.state.name} type="radio" val={value} defaultChecked={checked} ref={ref} onChange={self.check}/>
                         <label htmlFor={self.state.name}>{name}</label>
                     </div>
                 );
@@ -26,6 +33,11 @@ define(['react','updateMixin'],function(React,updateMixin){
                     {inputs}
                 </div>
             );
+        },
+        check:function(e){
+            this.setState({
+                checked:e.target.value
+            });
         }
     });
     return Radio;
