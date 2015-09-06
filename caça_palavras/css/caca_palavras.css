@@ -34,7 +34,7 @@
 }
 
 .tabela td.hover{
-    cursor:url(../img/pencil.png), auto;
+    cursor: url('../img/hand-pencil.gif') , auto;
     color:#5cb85c;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .mark:hover{
-    cursor:url(../img/pencil.png), auto;
+   cursor: url('../img/hand-pencil.gif') , auto;
 }
 
 .tabela-container{
@@ -64,7 +64,7 @@
 }
 
 .pencil-hover{
-    cursor:url(../img/pencil.png), auto;
+    cursor: url('../img/hand-pencil.gif') , auto;
 }
 
 .tempo{

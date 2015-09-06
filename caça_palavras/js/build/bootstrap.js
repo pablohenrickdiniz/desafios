@@ -9,7 +9,7 @@ requirejs(['../lib/config','js/config'],function(){
 
         $(document).ready(function(){
             React.render(
-                <Jogo capture={event_controller.capture}/>,
+                React.createElement(Jogo, {capture: event_controller.capture}),
                 document.getElementById('novo-jogo-container')
             );
         });

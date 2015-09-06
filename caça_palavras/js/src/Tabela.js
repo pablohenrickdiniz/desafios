@@ -1,6 +1,6 @@
 define(
-    ['react','array','string','text','Celula','matriz','mathlib','keys','UpdateMixin'],
-    function(React,array,string,Text,Celula,Matriz,mathlib,Keys,updateMixin){
+    ['react','array','string','text','Celula','matriz','mathlib','UpdateMixin'],
+    function(React,array,string,Text,Celula,Matriz,mathlib,updateMixin){
         return  React.createClass({
             mixins:[updateMixin],
             encontradas:[],
@@ -22,18 +22,6 @@ define(
             },
             componentWillMount:function(){
                 var self = this;
-                Keys.denyAll();
-                Keys.allow(
-                    Keys.KEY_ESC,
-                    Keys.KEY_PF5
-                );
-
-                $(document).on('keydown',function(e){
-                    if(e.which == Keys.KEY_ESC){
-                        self.unselectState();
-                    }
-                });
-
                 $(window).resize(function(){
                     self.updateMarkStyles();
                 });
@@ -274,19 +262,17 @@ define(
                                     i = i == -1?palavras.indexOf(text.reverse()):i;
 
                                     self.encontradas.push(palavras[i]);
-
-
                                     var checkedIntervals = self.state.checkedIntervals;
                                     checkedIntervals.push(interval);
                                     self.setState({
                                         checkedIntervals:checkedIntervals
                                     },function(){
                                         self.updateMarkStyles();
+                                        self.unselectState();
                                     });
                                 }
                             }
                         }
-                        self.unselectState();
                     }
                 }
             },

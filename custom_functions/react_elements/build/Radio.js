@@ -1,5 +1,5 @@
 define(['react','UpdateMixin'],function(React,updateMixin){
-    var Radio = React.createClass({
+    var Radio = React.createClass({displayName: "Radio",
         mixins:[updateMixin],
         getInitialState:function(){
             return {
@@ -17,17 +17,17 @@ define(['react','UpdateMixin'],function(React,updateMixin){
                 var option = options[name];
                 var checked = (self.state.checked == null && index == 0)||(self.state.checked == option.value);
                 inputs.push(
-                    <div className="radioGroup" key={index}>
-                        <input name={self.state.name} {...option} type="radio"  defaultChecked={checked} ref={'radio'+index} onChange={self.check}/>
-                        <label htmlFor={self.state.name}>{name}</label>
-                    </div>
+                    React.createElement("div", {className: "radioGroup", key: index}, 
+                        React.createElement("input", React.__spread({name: self.state.name},  option, {type: "radio", defaultChecked: checked, ref: 'radio'+index, onChange: self.check})), 
+                        React.createElement("label", {htmlFor: self.state.name}, name)
+                    )
                 );
             });
 
             return (
-                <div className="inputGroup">
-                    {inputs}
-                </div>
+                React.createElement("div", {className: "inputGroup"}, 
+                    inputs
+                )
             );
         },
         check:function(e){

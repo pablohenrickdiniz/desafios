@@ -12,19 +12,19 @@ define(
             render:function(){
                 var self = this;
                 return (
-                    <div className="jogo">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <span className="tempo">Tempo:<label>{self.state.tempo.format('HH:mm:ss')}</label></span>
-                            </div>
-                            <div className="col-md-4 text-center">
-                                <h1>{self.state.titulo}</h1>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <Tabela ref="tabela"/>
-                        </div>
-                    </div>
+                    React.createElement("div", {className: "jogo"}, 
+                        React.createElement("div", {className: "row"}, 
+                            React.createElement("div", {className: "col-md-4"}, 
+                                React.createElement("span", {className: "tempo"}, "Tempo:", React.createElement("label", null, self.state.tempo.format('HH:mm:ss')))
+                            ), 
+                            React.createElement("div", {className: "col-md-4 text-center"}, 
+                                React.createElement("h1", null, self.state.titulo)
+                            )
+                        ), 
+                        React.createElement("div", {className: "row"}, 
+                            React.createElement(Tabela, {ref: "tabela"})
+                        )
+                    )
                 );
             },
             componentWillMount:function(){
@@ -116,7 +116,7 @@ define(
                 self.pausar();
 
                 React.render(
-                    <NovoJogo options={options} callback={self.iniciar} open={true} onClose={self.continuar}/>,
+                    React.createElement(NovoJogo, {options: options, callback: self.iniciar, open: true, onClose: self.continuar}),
                     document.getElementById('modal-container')
                 );
             }

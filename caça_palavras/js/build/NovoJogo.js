@@ -10,10 +10,10 @@ define(['react','ModalElement','RadioElement','UpdateMixin'],function(React,Moda
         render:function(){
             var self = this;
             return (
-                <Modal open={self.state.open} title="Novo Jogo" size="modal-sm" onClose={self.state.onClose}>
-                    <Radio name="jogo" options={self.props.options} ref="radio"/>
-                    <button className="btn btn-primary" onClick={self.onConfirm}>Abrir</button>
-                </Modal>
+                React.createElement(Modal, {open: self.state.open, title: "Novo Jogo", size: "modal-sm", onClose: self.state.onClose}, 
+                    React.createElement(Radio, {name: "jogo", options: self.props.options, ref: "radio"}), 
+                    React.createElement("button", {className: "btn btn-primary", onClick: self.onConfirm}, "Abrir")
+                )
             );
         },
         onConfirm:function(){
